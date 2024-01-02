@@ -8,7 +8,7 @@ project(RM_prictice)
 #   set(CMAKE_CXX_COMPILER /usr/bin/clang++)
 #endif()
 
-add_definitions(-std=c++11)
+add_definitions(-std=c++14)
 add_definitions(-DAPI_EXPORTS)
 option(CUDA_USE_STATIC_CUDA_RUNTIME off)
 set(CMAKE_CXX_STANDARD 11)
@@ -34,8 +34,10 @@ link_directories(/home/vertilang/TensorRT-8.5.3.1/lib)
 find_package(OpenCV  REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(fmt REQUIRED)
+find_package(Ceres REQUIRED)
 
 # link the head files
+include_directories("/usr/local/include/ceres")
 include_directories("/usr/include/eigen3")#new
 include_directories(${OpenCV_INCLUDE_DIRS} )
 include_directories(${TensorRT_INCLUDE_DIRS})
