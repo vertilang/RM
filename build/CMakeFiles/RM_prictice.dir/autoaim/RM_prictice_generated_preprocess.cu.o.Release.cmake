@@ -58,18 +58,18 @@ endif()
 
 # Set these up as variables to make reading the generated file easier
 set(CMAKE_COMMAND "/usr/local/bin/cmake") # path
-set(source_file "/home/vertilang/code/RM_Vertilang_master/./autoaim/preprocess.cu") # path
-set(NVCC_generated_dependency_file "/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles/RM_prictice.dir/./autoaim/RM_prictice_generated_preprocess.cu.o.NVCC-depend") # path
-set(cmake_dependency_file "/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles/RM_prictice.dir/./autoaim/RM_prictice_generated_preprocess.cu.o.depend") # path
+set(source_file "/home/vertilang/code/RM_practice/./autoaim/preprocess.cu") # path
+set(NVCC_generated_dependency_file "/home/vertilang/code/RM_practice/build/CMakeFiles/RM_prictice.dir/./autoaim/RM_prictice_generated_preprocess.cu.o.NVCC-depend") # path
+set(cmake_dependency_file "/home/vertilang/code/RM_practice/build/CMakeFiles/RM_prictice.dir/./autoaim/RM_prictice_generated_preprocess.cu.o.depend") # path
 set(CUDA_make2cmake "/usr/local/share/cmake-3.27/Modules/FindCUDA/make2cmake.cmake") # path
 set(CUDA_parse_cubin "/usr/local/share/cmake-3.27/Modules/FindCUDA/parse_cubin.cmake") # path
 set(build_cubin OFF) # bool
 set(CUDA_HOST_COMPILER "/usr/bin/cc") # path
 # We won't actually use these variables for now, but we need to set this, in
 # order to force this file to be run again if it changes.
-set(generated_file_path "/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles/RM_prictice.dir/./autoaim/.") # path
-set(generated_file_internal "/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles/RM_prictice.dir/./autoaim/./RM_prictice_generated_preprocess.cu.o") # path
-set(generated_cubin_file_internal "/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles/RM_prictice.dir/./autoaim/./RM_prictice_generated_preprocess.cu.o.cubin.txt") # path
+set(generated_file_path "/home/vertilang/code/RM_practice/build/CMakeFiles/RM_prictice.dir/./autoaim/.") # path
+set(generated_file_internal "/home/vertilang/code/RM_practice/build/CMakeFiles/RM_prictice.dir/./autoaim/./RM_prictice_generated_preprocess.cu.o") # path
+set(generated_cubin_file_internal "/home/vertilang/code/RM_practice/build/CMakeFiles/RM_prictice.dir/./autoaim/./RM_prictice_generated_preprocess.cu.o.cubin.txt") # path
 
 set(CUDA_NVCC_EXECUTABLE "/usr/local/cuda/bin/nvcc") # path
 set(CUDA_NVCC_FLAGS  ;; ) # list
@@ -79,7 +79,7 @@ set(CUDA_NVCC_FLAGS_DEBUG  ; )
 set(CUDA_NVCC_FLAGS_MINSIZEREL  ; )
 set(CUDA_NVCC_FLAGS_RELWITHDEBINFO  ; )
 set(nvcc_flags -m64;--std;c++11) # list
-set(CUDA_NVCC_INCLUDE_DIRS [==[/usr/local/cuda/include;/usr/local/cuda/include;/home/vertilang/TensorRT-8.5.3.1/include;/usr/include/eigen3;/usr/local/include/opencv4;/home/vertilang/code/RM_Vertilang_master/autoaim;/home/vertilang/code/RM_Vertilang_master/DaHeng;/home/vertilang/code/RM_Vertilang_master/common;/home/vertilang/code/RM_Vertilang_master/include;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include]==]) # list (needs to be in lua quotes to address backslashes)
+set(CUDA_NVCC_INCLUDE_DIRS [==[/usr/local/cuda/include;/usr/local/cuda/include;/home/vertilang/TensorRT-8.5.3.1/include;/usr/include/eigen3;/usr/local/include/opencv4;/home/vertilang/code/RM_practice/autoaim;/home/vertilang/code/RM_practice/DaHeng;/home/vertilang/code/RM_practice/common;/home/vertilang/code/RM_practice/include;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include/opencv4;/usr/local/include]==]) # list (needs to be in lua quotes to address backslashes)
 string(REPLACE "\\" "/" CUDA_NVCC_INCLUDE_DIRS "${CUDA_NVCC_INCLUDE_DIRS}")
 set(CUDA_NVCC_COMPILE_DEFINITIONS [==[API_EXPORTS]==]) # list (needs to be in lua quotes see #16510 ).
 set(format_flag "-c") # string

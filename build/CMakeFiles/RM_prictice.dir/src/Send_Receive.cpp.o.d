@@ -1,7 +1,7 @@
 CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o: \
- /home/vertilang/code/RM_Vertilang_master/src/Send_Receive.cpp \
+ /home/vertilang/code/RM_practice/src/Send_Receive.cpp \
  /usr/include/stdc-predef.h \
- /home/vertilang/code/RM_Vertilang_master/include/Send_Receive.h \
+ /home/vertilang/code/RM_practice/include/Send_Receive.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vertilang/code/RM_Vertilang_master
+CMAKE_SOURCE_DIR = /home/vertilang/code/RM_practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vertilang/code/RM_Vertilang_master/build
+CMAKE_BINARY_DIR = /home/vertilang/code/RM_practice/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RM_prictice.dir/depend.make
@@ -69,533 +69,96 @@ include CMakeFiles/RM_prictice.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/RM_prictice.dir/flags.make
 
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /home/vertilang/code/RM_Vertilang_master/autoaim/preprocess.cu
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /home/vertilang/code/RM_Vertilang_master/autoaim/preprocess.cu
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /home/vertilang/code/RM_Vertilang_master/common/preprocess.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/alloca.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/asm-generic/errno-base.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/asm-generic/errno.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/assert.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/algorithm
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/array
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/backward/auto_ptr.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/backward/binders.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/algorithmfwd.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/alloc_traits.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/allocated_ptr.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/allocator.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/atomic_base.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/atomic_lockfree_defines.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/basic_ios.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/basic_ios.tcc
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/basic_string.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/basic_string.tcc
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/char_traits.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/codecvt.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/concept_check.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/cpp_type_traits.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/cxxabi_forced.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/cxxabi_init_exception.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/deque.tcc
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/erase_if.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/exception.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/exception_defines.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/exception_ptr.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/functexcept.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/functional_hash.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/hash_bytes.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/hashtable.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/hashtable_policy.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/invoke.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/ios_base.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/istream.tcc
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/list.tcc
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/locale_classes.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/locale_classes.tcc
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/locale_conv.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/locale_facets.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/locale_facets.tcc
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/locale_facets_nonio.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/locale_facets_nonio.tcc
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/localefwd.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/memoryfwd.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/move.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/nested_exception.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/ostream.tcc
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/ostream_insert.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/parse_numbers.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/postypes.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/predefined_ops.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/ptr_traits.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/range_access.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/refwrap.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/shared_ptr.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/shared_ptr_atomic.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/shared_ptr_base.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/sstream.tcc
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/std_abs.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/std_function.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/std_mutex.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_algo.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_algobase.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_bvector.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_construct.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_deque.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_function.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_heap.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_iterator.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_iterator_base_funcs.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_iterator_base_types.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_list.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_map.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_multimap.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_multiset.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_pair.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_queue.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_raw_storage_iter.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_relops.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_set.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_tempbuf.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_tree.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_uninitialized.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stl_vector.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/streambuf.tcc
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/streambuf_iterator.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/stringfwd.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/uniform_int_dist.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/unique_lock.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/unique_ptr.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/unordered_map.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/uses_allocator.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/bits/vector.tcc
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/cctype
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/cerrno
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/cfloat
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/chrono
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/climits
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/clocale
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/cmath
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/complex
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/cstddef
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/cstdint
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/cstdio
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/cstdlib
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/cstring
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/ctime
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/cwchar
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/cwctype
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/debug/assertions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/debug/debug.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/deque
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/exception
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/ext/aligned_buffer.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/ext/alloc_traits.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/ext/atomicity.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/ext/concurrence.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/ext/new_allocator.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/ext/numeric_traits.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/ext/string_conversions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/ext/type_traits.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/functional
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/initializer_list
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/iomanip
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/ios
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/iosfwd
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/iostream
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/istream
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/limits
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/list
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/locale
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/map
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/math.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/memory
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/mutex
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/new
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/ostream
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/queue
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/ratio
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/set
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/sstream
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/stdexcept
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/stdlib.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/streambuf
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/string
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/system_error
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/tuple
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/type_traits
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/typeinfo
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/unordered_map
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/utility
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/c++/9/vector
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/ctype.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/endian.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/errno.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/features.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/libintl.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/limits.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/linux/errno.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/linux/limits.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/locale.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/math.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/pthread.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/sched.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/stdc-predef.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/stdint.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/stdio.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/stdlib.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/string.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/strings.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/time.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/wchar.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/wctype.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/asm/errno.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/byteswap.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/cpu-set.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/endian.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/endianness.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/errno.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/floatn-common.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/floatn.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/fp-fast.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/fp-logb.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/iscanonical.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/local_lim.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/locale.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/long-double.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/math-vector.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/mathcalls.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/mathinline.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/posix1_lim.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/posix2_lim.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/sched.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/select.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/select2.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/setjmp.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/stdio.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/stdio2.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/stdlib.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/string_fortified.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/time.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/time64.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/timesize.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/timex.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/FILE.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/__FILE.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/clock_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/error_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/locale_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/time_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/timer_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/typesizes.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/uintn-identity.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/uio_lim.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/waitflags.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/waitstatus.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/wchar.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/wchar2.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/wordsize.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/bits/xopen_lim.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/gnu/stubs.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/sys/cdefs.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/sys/select.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/include/x86_64-linux-gnu/sys/types.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/builtin_types.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/channel_descriptor.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/common_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/cudacc_ext.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/device_double_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/device_double_functions.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/device_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/device_functions.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/host_config.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/host_defines.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/math_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/math_functions.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/sm_70_rt.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/sm_70_rt.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/sm_80_rt.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/sm_80_rt.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/sm_90_rt.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/crt/sm_90_rt.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/cuda_runtime.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/cuda_surface_types.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/cuda_texture_types.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/device_atomic_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/device_launch_parameters.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/device_types.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/driver_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/driver_types.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/library_types.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_61_intrinsics.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/sm_61_intrinsics.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/surface_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/surface_types.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/texture_types.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/vector_functions.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/vector_functions.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/cuda/include/vector_types.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/calib3d.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/affine.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/async.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/base.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/bufferpool.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/check.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/cuda.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/cuda.inl.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/cuda_types.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/cvdef.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/cvstd.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/fast_math.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/hal/interface.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/mat.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/mat.inl.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/matx.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/neon_utils.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/operations.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/optim.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/ovx.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/persistence.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/saturate.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/traits.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/types.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/utility.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/version.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/dnn.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/dnn/dict.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/dnn/dnn.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/dnn/dnn.inl.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/dnn/layer.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/dnn/version.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/features2d.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/all_indices.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/allocator.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/any.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/autotuned_index.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/composite_index.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/config.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/defines.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/dist.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/flann_base.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/general.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/ground_truth.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/heap.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/index_testing.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/kdtree_index.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/kmeans_index.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/linear_index.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/logger.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/lsh_index.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/lsh_table.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/matrix.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/miniflann.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/nn_index.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/params.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/random.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/result_set.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/sampling.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/saving.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/flann/timer.h
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/highgui.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/imgcodecs.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/imgproc.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/ml.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/objdetect.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/objdetect/face.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/opencv.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/opencv_modules.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/photo.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/stitching.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/stitching/detail/util.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/stitching/detail/util_inl.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/stitching/warpers.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/video.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/video/background_segm.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/video/tracking.hpp
-CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /usr/local/include/opencv4/opencv2/videoio.hpp
+CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: /home/vertilang/code/RM_practice/autoaim/preprocess.cu
+CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o.depend
 CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o: CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o.Release.cmake
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o"
-	cd /home/vertilang/code/RM_Vertilang_master/build/CMakeFiles/RM_prictice.dir/autoaim && /usr/local/bin/cmake -E make_directory /home/vertilang/code/RM_Vertilang_master/build/CMakeFiles/RM_prictice.dir/./autoaim/.
-	cd /home/vertilang/code/RM_Vertilang_master/build/CMakeFiles/RM_prictice.dir/autoaim && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles/RM_prictice.dir/./autoaim/./RM_prictice_generated_preprocess.cu.o -D generated_cubin_file:STRING=/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles/RM_prictice.dir/./autoaim/./RM_prictice_generated_preprocess.cu.o.cubin.txt -P /home/vertilang/code/RM_Vertilang_master/build/CMakeFiles/RM_prictice.dir/./autoaim/RM_prictice_generated_preprocess.cu.o.Release.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/vertilang/code/RM_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o"
+	cd /home/vertilang/code/RM_practice/build/CMakeFiles/RM_prictice.dir/autoaim && /usr/local/bin/cmake -E make_directory /home/vertilang/code/RM_practice/build/CMakeFiles/RM_prictice.dir/./autoaim/.
+	cd /home/vertilang/code/RM_practice/build/CMakeFiles/RM_prictice.dir/autoaim && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/vertilang/code/RM_practice/build/CMakeFiles/RM_prictice.dir/./autoaim/./RM_prictice_generated_preprocess.cu.o -D generated_cubin_file:STRING=/home/vertilang/code/RM_practice/build/CMakeFiles/RM_prictice.dir/./autoaim/./RM_prictice_generated_preprocess.cu.o.cubin.txt -P /home/vertilang/code/RM_practice/build/CMakeFiles/RM_prictice.dir/./autoaim/RM_prictice_generated_preprocess.cu.o.Release.cmake
 
 CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o: CMakeFiles/RM_prictice.dir/flags.make
-CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o: /home/vertilang/code/RM_Vertilang_master/autoaim/TRTModule.cpp
+CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o: /home/vertilang/code/RM_practice/autoaim/TRTModule.cpp
 CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o: CMakeFiles/RM_prictice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o -MF CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o.d -o CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o -c /home/vertilang/code/RM_Vertilang_master/autoaim/TRTModule.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o -MF CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o.d -o CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o -c /home/vertilang/code/RM_practice/autoaim/TRTModule.cpp
 
 CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_Vertilang_master/autoaim/TRTModule.cpp > CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/autoaim/TRTModule.cpp > CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.i
 
 CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_Vertilang_master/autoaim/TRTModule.cpp -o CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/autoaim/TRTModule.cpp -o CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.s
 
 CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o: CMakeFiles/RM_prictice.dir/flags.make
-CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o: /home/vertilang/code/RM_Vertilang_master/DaHeng/DaHengCamera.cpp
+CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o: /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.cpp
 CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o: CMakeFiles/RM_prictice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o -MF CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o.d -o CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o -c /home/vertilang/code/RM_Vertilang_master/DaHeng/DaHengCamera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o -MF CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o.d -o CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o -c /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.cpp
 
 CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_Vertilang_master/DaHeng/DaHengCamera.cpp > CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.cpp > CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.i
 
 CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_Vertilang_master/DaHeng/DaHengCamera.cpp -o CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.cpp -o CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.s
 
 CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o: CMakeFiles/RM_prictice.dir/flags.make
-CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o: /home/vertilang/code/RM_Vertilang_master/src/Send_Receive.cpp
+CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o: /home/vertilang/code/RM_practice/src/Send_Receive.cpp
 CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o: CMakeFiles/RM_prictice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o -MF CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o.d -o CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o -c /home/vertilang/code/RM_Vertilang_master/src/Send_Receive.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o -MF CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o.d -o CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o -c /home/vertilang/code/RM_practice/src/Send_Receive.cpp
 
 CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_Vertilang_master/src/Send_Receive.cpp > CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/src/Send_Receive.cpp > CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.i
 
 CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_Vertilang_master/src/Send_Receive.cpp -o CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/src/Send_Receive.cpp -o CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.s
 
 CMakeFiles/RM_prictice.dir/src/predict.cpp.o: CMakeFiles/RM_prictice.dir/flags.make
-CMakeFiles/RM_prictice.dir/src/predict.cpp.o: /home/vertilang/code/RM_Vertilang_master/src/predict.cpp
+CMakeFiles/RM_prictice.dir/src/predict.cpp.o: /home/vertilang/code/RM_practice/src/predict.cpp
 CMakeFiles/RM_prictice.dir/src/predict.cpp.o: CMakeFiles/RM_prictice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RM_prictice.dir/src/predict.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/src/predict.cpp.o -MF CMakeFiles/RM_prictice.dir/src/predict.cpp.o.d -o CMakeFiles/RM_prictice.dir/src/predict.cpp.o -c /home/vertilang/code/RM_Vertilang_master/src/predict.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RM_prictice.dir/src/predict.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/src/predict.cpp.o -MF CMakeFiles/RM_prictice.dir/src/predict.cpp.o.d -o CMakeFiles/RM_prictice.dir/src/predict.cpp.o -c /home/vertilang/code/RM_practice/src/predict.cpp
 
 CMakeFiles/RM_prictice.dir/src/predict.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RM_prictice.dir/src/predict.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_Vertilang_master/src/predict.cpp > CMakeFiles/RM_prictice.dir/src/predict.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/src/predict.cpp > CMakeFiles/RM_prictice.dir/src/predict.cpp.i
 
 CMakeFiles/RM_prictice.dir/src/predict.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RM_prictice.dir/src/predict.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_Vertilang_master/src/predict.cpp -o CMakeFiles/RM_prictice.dir/src/predict.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/src/predict.cpp -o CMakeFiles/RM_prictice.dir/src/predict.cpp.s
 
 CMakeFiles/RM_prictice.dir/src/thread.cpp.o: CMakeFiles/RM_prictice.dir/flags.make
-CMakeFiles/RM_prictice.dir/src/thread.cpp.o: /home/vertilang/code/RM_Vertilang_master/src/thread.cpp
+CMakeFiles/RM_prictice.dir/src/thread.cpp.o: /home/vertilang/code/RM_practice/src/thread.cpp
 CMakeFiles/RM_prictice.dir/src/thread.cpp.o: CMakeFiles/RM_prictice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RM_prictice.dir/src/thread.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/src/thread.cpp.o -MF CMakeFiles/RM_prictice.dir/src/thread.cpp.o.d -o CMakeFiles/RM_prictice.dir/src/thread.cpp.o -c /home/vertilang/code/RM_Vertilang_master/src/thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RM_prictice.dir/src/thread.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/src/thread.cpp.o -MF CMakeFiles/RM_prictice.dir/src/thread.cpp.o.d -o CMakeFiles/RM_prictice.dir/src/thread.cpp.o -c /home/vertilang/code/RM_practice/src/thread.cpp
 
 CMakeFiles/RM_prictice.dir/src/thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RM_prictice.dir/src/thread.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_Vertilang_master/src/thread.cpp > CMakeFiles/RM_prictice.dir/src/thread.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/src/thread.cpp > CMakeFiles/RM_prictice.dir/src/thread.cpp.i
 
 CMakeFiles/RM_prictice.dir/src/thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RM_prictice.dir/src/thread.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_Vertilang_master/src/thread.cpp -o CMakeFiles/RM_prictice.dir/src/thread.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/src/thread.cpp -o CMakeFiles/RM_prictice.dir/src/thread.cpp.s
 
 CMakeFiles/RM_prictice.dir/main.cpp.o: CMakeFiles/RM_prictice.dir/flags.make
-CMakeFiles/RM_prictice.dir/main.cpp.o: /home/vertilang/code/RM_Vertilang_master/main.cpp
+CMakeFiles/RM_prictice.dir/main.cpp.o: /home/vertilang/code/RM_practice/main.cpp
 CMakeFiles/RM_prictice.dir/main.cpp.o: CMakeFiles/RM_prictice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RM_prictice.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/main.cpp.o -MF CMakeFiles/RM_prictice.dir/main.cpp.o.d -o CMakeFiles/RM_prictice.dir/main.cpp.o -c /home/vertilang/code/RM_Vertilang_master/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RM_prictice.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/main.cpp.o -MF CMakeFiles/RM_prictice.dir/main.cpp.o.d -o CMakeFiles/RM_prictice.dir/main.cpp.o -c /home/vertilang/code/RM_practice/main.cpp
 
 CMakeFiles/RM_prictice.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RM_prictice.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_Vertilang_master/main.cpp > CMakeFiles/RM_prictice.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/main.cpp > CMakeFiles/RM_prictice.dir/main.cpp.i
 
 CMakeFiles/RM_prictice.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RM_prictice.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_Vertilang_master/main.cpp -o CMakeFiles/RM_prictice.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/main.cpp -o CMakeFiles/RM_prictice.dir/main.cpp.s
 
 # Object files for target RM_prictice
 RM_prictice_OBJECTS = \
@@ -608,7 +171,7 @@ RM_prictice_OBJECTS = \
 
 # External object files for target RM_prictice
 RM_prictice_EXTERNAL_OBJECTS = \
-"/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o"
+"/home/vertilang/code/RM_practice/build/CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o"
 
 RM_prictice: CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o
 RM_prictice: CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o
@@ -637,7 +200,7 @@ RM_prictice: /usr/local/lib/libopencv_flann.so.4.5.5
 RM_prictice: /usr/local/lib/libopencv_imgproc.so.4.5.5
 RM_prictice: /usr/local/lib/libopencv_core.so.4.5.5
 RM_prictice: CMakeFiles/RM_prictice.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vertilang/code/RM_Vertilang_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable RM_prictice"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vertilang/code/RM_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable RM_prictice"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RM_prictice.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -649,6 +212,6 @@ CMakeFiles/RM_prictice.dir/clean:
 .PHONY : CMakeFiles/RM_prictice.dir/clean
 
 CMakeFiles/RM_prictice.dir/depend: CMakeFiles/RM_prictice.dir/autoaim/RM_prictice_generated_preprocess.cu.o
-	cd /home/vertilang/code/RM_Vertilang_master/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vertilang/code/RM_Vertilang_master /home/vertilang/code/RM_Vertilang_master /home/vertilang/code/RM_Vertilang_master/build /home/vertilang/code/RM_Vertilang_master/build /home/vertilang/code/RM_Vertilang_master/build/CMakeFiles/RM_prictice.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/vertilang/code/RM_practice/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vertilang/code/RM_practice /home/vertilang/code/RM_practice /home/vertilang/code/RM_practice/build /home/vertilang/code/RM_practice/build /home/vertilang/code/RM_practice/build/CMakeFiles/RM_prictice.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/RM_prictice.dir/depend
 

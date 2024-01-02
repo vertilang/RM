@@ -1,7 +1,7 @@
 CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o: \
- /home/vertilang/code/RM_Vertilang_master/DaHeng/DaHengCamera.cpp \
+ /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.cpp \
  /usr/include/stdc-predef.h \
- /home/vertilang/code/RM_Vertilang_master/DaHeng/DaHengCamera.h \
+ /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.h \
  /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -143,8 +143,8 @@ CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/vertilang/code/RM_Vertilang_master/DaHeng/GxIAPI.h \
- /home/vertilang/code/RM_Vertilang_master/DaHeng/DxImageProc.h \
+ /home/vertilang/code/RM_practice/DaHeng/GxIAPI.h \
+ /home/vertilang/code/RM_practice/DaHeng/DxImageProc.h \
  /usr/include/c++/9/stdlib.h /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \

@@ -1,7 +1,7 @@
 CMakeFiles/RM_prictice.dir/src/predict.cpp.o: \
- /home/vertilang/code/RM_Vertilang_master/src/predict.cpp \
+ /home/vertilang/code/RM_practice/src/predict.cpp \
  /usr/include/stdc-predef.h \
- /home/vertilang/code/RM_Vertilang_master/src/../include/predict.h \
+ /home/vertilang/code/RM_practice/src/../include/predict.h \
  /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
