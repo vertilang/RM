@@ -100,7 +100,7 @@ void Factory::consumer()
             predict.best_target_.pts[2].y=detector.rect.y+detector.rect.height;
             predict.best_target_.pts[3].x=detector.rect.x+detector.rect.width;
             predict.best_target_.pts[3].y=detector.rect.y+detector.rect.height;
-            predict.best_target_.cur_pose_=predict.init();
+            predict.init();
             visiondata.yaw_data_.f=predict.best_target_.cur_pose_.yaw;
             visiondata.pitch_data_.f=predict.best_target_.cur_pose_.pitch;
         }
@@ -145,7 +145,7 @@ void Factory::consumer()
 
         float FPS = 1/(time_run.count());
 
-        std::cout << "                 " << "FPS: " << FPS << std::endl;
+        //std::cout << "                 " << "FPS: " << FPS << std::endl;
 
     }
 }

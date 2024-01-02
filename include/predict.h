@@ -191,22 +191,11 @@ enum class PREDICTORMODE{
         //单张图片最多装甲板数量
         Armor target1;
         Armor target2;
-        GimbalPose init();
+        void init();
         Armor best_target_;                     //装甲板
         Armor previous_target_;                 //上一帧目标坐标
         bool is_have_data_;
         float delta_t_;                         //时间
-
-        // 获得电控发过来的数据
-        void getPrivateData(float &v0, Armor &armor, GimbalPose &current_gimbalpose,bool is_have_data,float delta_t)
-        {
-        //v0 = 0.5;
-        this->v0 = v0;
-        this->current_gimbalpose_ = current_gimbalpose;
-        this->is_have_data_ = is_have_data;
-        this->best_target_.h_time_stamp_ = now();
-        this->delta_t_ = delta_t;
-        }
     };
 
     /*
@@ -216,6 +205,6 @@ enum class PREDICTORMODE{
     *
     * @author: 李黔琦
     */
-    Eigen::Vector3f cam3ptz(GimbalPose &gm,Eigen::Vector3f &pos);
+    Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos);
 
 }

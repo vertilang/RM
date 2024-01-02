@@ -290,12 +290,12 @@ namespace Horizon
 
 			if (getBit(get_data.OnePointFive, 4) == 0)
 			{
-				std::cout << "识别红色" << std::endl;
+				//std::cout << "识别红色" << std::endl;
 				get_data.color_ = false;
 			}
 			else
 			{
-				std::cout << "识别蓝色" << std::endl;
+				//std::cout << "识别蓝色" << std::endl;
 				get_data.color_ = true;
 			}
 
