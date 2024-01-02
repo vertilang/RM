@@ -326,12 +326,12 @@ std::vector<Object> TRTModule::operator()(const cv::Mat &img)
     decode_outputs(prob, objects, scale, img_w, img_h,OUTPUT_CANDIDATES,top,left);
     for (int i = 0; i<objects.size(); i++)
     {
-        cv::rectangle(img, cv::Point(objects[i].rect.x,objects[i].rect.y),cv::Point(objects[i].rect.x+objects[i].rect.width,objects[i].rect.y+objects[i].rect.height), cv::Scalar(0,255,0), 2);
-       /* cv::line(img, cv::Point2f(objects[i].landmarks[0],objects[i].landmarks[1]), cv::Point2f(objects[i].landmarks[2],objects[i].landmarks[3]),cv::Scalar(193, 182, 255), 1, 8);
+        //cv::rectangle(img, cv::Point(objects[i].rect.x,objects[i].rect.y),cv::Point(objects[i].rect.x+objects[i].rect.width,objects[i].rect.y+objects[i].rect.height), cv::Scalar(0,255,0), 2);
+        cv::line(img, cv::Point2f(objects[i].landmarks[0],objects[i].landmarks[1]), cv::Point2f(objects[i].landmarks[2],objects[i].landmarks[3]),cv::Scalar(193, 182, 255), 1, 8);
         cv::line(img, cv::Point2f(objects[i].landmarks[2],objects[i].landmarks[3]), cv::Point2f(objects[i].landmarks[4],objects[i].landmarks[5]),cv::Scalar(193, 182, 255), 1, 8);
         cv::line(img, cv::Point2f(objects[i].landmarks[4],objects[i].landmarks[5]), cv::Point2f(objects[i].landmarks[6],objects[i].landmarks[7]),cv::Scalar(193, 182, 255), 1, 8);
         cv::line(img, cv::Point2f(objects[i].landmarks[6],objects[i].landmarks[7]), cv::Point2f(objects[i].landmarks[0],objects[i].landmarks[1]),cv::Scalar(193, 182, 255), 1, 8);
-*/
+
     }
     delete prob;
     return objects;

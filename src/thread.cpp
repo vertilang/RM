@@ -86,8 +86,8 @@ void Factory::consumer()
         image_buffer_rear_ = image_buffer_front_ - 1;
         // 直接获取引用
         cv::Mat &img = image_buffer_[image_buffer_rear_%IMGAE_BUFFER];
-        predict.best_target_.cur_pose_.yaw=stm32data.yaw_data_.f;
-        predict.best_target_.cur_pose_.pitch=stm32data.pitch_data_.f;
+        predict.best_target_.cur_pose_.yaw=0;//stm32data.yaw_data_.f;
+        predict.best_target_.cur_pose_.pitch=0;//stm32data.pitch_data_.f;
         predict.best_target_.cur_pose_.timestamp=stm32data.time.f;
         auto detectors = trtmodel(img);
         for(auto detector : detectors)
@@ -114,20 +114,20 @@ void Factory::consumer()
         }
         data_controler_.sentData(fd,visiondata);
         char test[100];
-        // sprintf(test, "tz:%0.4f", predict.best_target_.center3d_.z);
-        // cv::putText(img, test, cv::Point(10, 40), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
+        sprintf(test, "tz:%0.4f", predict.best_target_.center3d_[2]);
+        cv::putText(img, test, cv::Point(10, 40), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(255, 255, 0), 1, 8);
 
-        // sprintf(test, "tx:%0.4f", predict.best_target_.center3d_.x);
-        // cv::putText(img, test, cv::Point(img.cols/3, 80), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
+        sprintf(test, "tx:%0.4f", predict.best_target_.center3d_[0]);
+        cv::putText(img, test, cv::Point(img.cols/3, 80), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 255), 1, 8);
 
-        // sprintf(test, "ty:%0.4f", predict.best_target_.center3d_.y);
-        // cv::putText(img, test, cv::Point(2*img.cols/3, 120), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
+        sprintf(test, "ty:%0.4f", predict.best_target_.center3d_[1]);
+        cv::putText(img, test, cv::Point(2*img.cols/3, 120), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
 
-        // sprintf(test, "get yaw:%0.4f ", predict.shot.yaw-predict.current_gimbalpose_.yaw);
-        // cv::putText(img, test, cv::Point(10, 160), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
+        sprintf(test, "send yaw:%0.4f ", predict.best_target_.cur_pose_.yaw);
+        cv::putText(img, test, cv::Point(10, 160), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
 
-        // sprintf(test, "get pitch:%0.4f ", predict.shot.pitch-predict.current_gimbalpose_.pitch);
-        // cv::putText(img, test, cv::Point(img.cols/2, 160), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
+        sprintf(test, "send pitch:%0.4f ", predict.best_target_.cur_pose_.pitch);
+        cv::putText(img, test, cv::Point(img.cols/2, 160), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
 
         // sprintf(test, " yaw:%0.4f ", predict.current_gimbalpose_.yaw);
         // cv::putText(img, test, cv::Point(2, 200), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);

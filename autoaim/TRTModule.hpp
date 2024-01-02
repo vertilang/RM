@@ -25,7 +25,7 @@
 static const int NUM_CLASSES = 36; 
 #define DEVICE 0  // GPU id
 #define NMS_THRESH 0.25
-#define BBOX_CONF_THRESH 0.75
+#define BBOX_CONF_THRESH 0.50
 
 struct Object
 {
