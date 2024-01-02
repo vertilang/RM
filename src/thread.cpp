@@ -163,7 +163,7 @@ void Factory::getdata()
 		// cv::waitKey(2);
 		if (fd == -1)
 		{
-			// std::cout << "[the serial dosen`t open!!!]" << std::endl;
+			std::cout << "[the serial dosen`t open!!!]" << std::endl;
 			continue;
 		}
 
