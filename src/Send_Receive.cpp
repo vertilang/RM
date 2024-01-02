@@ -340,7 +340,7 @@ namespace Horizon
 		}
 		else
 		{
-			cout << "接受失败!" << endl;
+			//cout << "接受失败!" << endl;
 			get_data.dubug_print = false;
 		}
 

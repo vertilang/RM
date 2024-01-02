@@ -60,8 +60,8 @@ GimbalPose predictor::point_to_armor(Eigen::Vector3f point) //将相机转向目
     float a = -0.5*g*(std::pow(dis,2)/std::pow(v0,2));
     float b = dis;
     float c = a - point[1];
-    float Discriminant = std::pow(b,2) - 4*a*c;  //判别式
-    cout<<Discriminant<<endl;
+    float Discriminant = (float)(std::pow(b,2) - 4*a*c);  //判别式
+    //cout<<Discriminant<<endl;
     if(Discriminant < 0) 
     {
         return -1;
