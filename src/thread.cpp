@@ -100,7 +100,7 @@ void Factory::consumer()
             predict.best_target_.pts[2].y=detector.rect.y+detector.rect.height;
             predict.best_target_.pts[3].x=detector.rect.x+detector.rect.width;
             predict.best_target_.pts[3].y=detector.rect.y+detector.rect.height;
-            predict.init();
+            predict.best_target_.cur_pose_=predict.init();
             visiondata.yaw_data_.f=predict.best_target_.cur_pose_.yaw;
             visiondata.pitch_data_.f=predict.best_target_.cur_pose_.pitch;
         }
@@ -133,7 +133,7 @@ void Factory::consumer()
         // cv::putText(img, test, cv::Point(2, 200), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
 
         // sprintf(test, " pitch:%0.4f ", predict.current_gimbalpose_.pitch);
-        cv::putText(img, test, cv::Point(img.cols/2, 200), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
+        //cv::putText(img, test, cv::Point(img.cols/2, 200), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
 
          std::string windowName = "show";
          cv::namedWindow(windowName, 0);

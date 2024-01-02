@@ -6,7 +6,6 @@ GimbalPose predictor::init()
 {
 
     return predictLocation();
-
 }
 
     /*
@@ -26,7 +25,7 @@ GimbalPose predictor::predictLocation()
         {
             best_target_.center3d_=pnp_solve_->poseCalculation(best_target_);
             return_gimbalpose=point_to_armor(best_target_.center3d_);
-
+            break;
         }
         case PREDICTORMODE::FOLLOW:
         {   
@@ -55,7 +54,7 @@ GimbalPose predictor::point_to_armor(Eigen::Vector3f point) //将相机转向目
     //yaw
     GimbalPose point_to_armor;
     point_to_armor.yaw = std::atan(point[0]/point[2])*180/CV_PI;
-
+    std::cout<<point_to_armor.yaw<<std::endl;
     //pitch   //斜抛运动求角度
     float a = -0.5*g*(std::pow(point[2],2)/std::pow(v0,2));
     float b = point[2];
@@ -71,12 +70,12 @@ GimbalPose predictor::point_to_armor(Eigen::Vector3f point) //将相机转向目
 
 	if (tan_angle1 >= -3.0 && tan_angle1 <= 3.0) 
     {   
-        //cout << "angle1     " << angle1 << endl;
+        std::cout << "pitch1     " << angle1 << std::endl;
         point_to_armor.pitch = angle1;
 	}
 	else
     {
-        //cout << "angle2     " << angle2 << endl;
+        std::cout << "pitch2     " << angle2 << std::endl;
         point_to_armor.pitch = angle2;
 	}
     

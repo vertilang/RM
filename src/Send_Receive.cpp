@@ -121,8 +121,8 @@ namespace Horizon
 		send_bytes[7] = data.yaw_data_.c[2];
 		send_bytes[8] = data.yaw_data_.c[3];
 
-		std::cout << "send pitch" << data.pitch_data_.f << std::endl;
-		std::cout << "send yaw" << data.yaw_data_.f << std::endl;
+		//std::cout << "send pitch" << data.pitch_data_.f << std::endl;
+		//std::cout << "send yaw" << data.yaw_data_.f << std::endl;
 
 		state_ = 0;
 
@@ -242,9 +242,6 @@ namespace Horizon
 			get_data.yaw_data_.c[2] = rec_bytes[FirstIndex + 7];
 			get_data.yaw_data_.c[3] = rec_bytes[FirstIndex + 8];
 
-			printf("PITCH is %d,%d,%d,%d \n", rec_bytes[FirstIndex + 1], rec_bytes[FirstIndex + 2], rec_bytes[FirstIndex + 3], rec_bytes[FirstIndex + 4]);
-			printf("YAW is %d,%d,%d,%d \n", rec_bytes[FirstIndex + 5], rec_bytes[FirstIndex + 6], rec_bytes[FirstIndex + 7], rec_bytes[FirstIndex + 8]);
-
 			if((get_data.pitch_data_.f) > 10000)
 			{
 				std::cout << "pitch error" << std::endl;
@@ -278,11 +275,6 @@ namespace Horizon
 					CLEAR_BIT(get_data.yaw_data_.c[3],6);
 				}
 			}
-
-			printf("PITCH1 is %d,%d,%d,%d \n", get_data.pitch_data_.c[0], get_data.pitch_data_.c[1], get_data.pitch_data_.c[2], get_data.pitch_data_.c[3]);
-			printf("YAW1 is %d,%d,%d,%d \n", get_data.yaw_data_.c[0], get_data.yaw_data_.c[1], get_data.yaw_data_.c[2], get_data.yaw_data_.c[3]);
-
-			// printf("first %d, second %d, third %d, forth %d\n", rec_bytes[1], rec_bytes[2], rec_bytes[3], rec_bytes[4]);
 
 			get_data.OnePointFive = rec_bytes[FirstIndex + 9];
 
@@ -343,14 +335,12 @@ namespace Horizon
 			get_data.init_firing_rate = rec_bytes[FirstIndex + 14];
 
 			// get_data.IsHave = true;
-			cout << "接收完成" << get_data.time.f << endl;
 			get_data.dubug_print = true;
 			free(rec_bytes);
 		}
 		else
 		{
 			cout << "接受失败!" << endl;
-			// get_data.IsHave = false;
 			get_data.dubug_print = false;
 		}
 

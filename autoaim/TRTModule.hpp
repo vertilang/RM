@@ -20,9 +20,9 @@
 #define MAX_IMAGE_INPUT_SIZE_THRESH 5000 * 5000
 
 #define DEVICE 0  // GPU id
-#define INPUT_H 640
-#define INPUT_W 640
-static const int NUM_CLASSES = 36; 
+#define INPUT_H 416
+#define INPUT_W 416
+static const int NUM_CLASSES = 8; 
 #define DEVICE 0  // GPU id
 #define NMS_THRESH 0.25
 #define BBOX_CONF_THRESH 0.50
