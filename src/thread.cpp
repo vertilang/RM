@@ -89,7 +89,7 @@ void Factory::consumer()
         predict.best_target_.cur_pose_.yaw=stm32data.yaw_data_.f;
         predict.best_target_.cur_pose_.pitch=stm32data.pitch_data_.f;
         predict.best_target_.cur_pose_.timestamp=stm32data.time.f;
-        //cout<<"get p"<<predict.best_target_.cur_pose_.pitch<<"get y"<<predict.best_target_.cur_pose_.yaw<<endl;
+        cout<<"   "<<predict.best_target_.cur_pose_.pitch<<"   "<<predict.best_target_.cur_pose_.yaw<<endl;
         predict.v0=20.0;
         auto detectors = trtmodel(img);
         for(auto detector : detectors)
@@ -105,6 +105,7 @@ void Factory::consumer()
             predict.init();
             visiondata.yaw_data_.f=predict.best_target_.cur_pose_.yaw;
             visiondata.pitch_data_.f=predict.best_target_.cur_pose_.pitch;
+            //cout<<"   "<<predict.best_target_.cur_pose_.pitch<<"   "<<predict.best_target_.cur_pose_.yaw<<endl;
         }
         if(!detectors.size())
         {

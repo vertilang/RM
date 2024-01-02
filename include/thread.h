@@ -16,7 +16,8 @@ public:
     Factory(){}
 public:
     cv::Mat img;
-    Horizon::predictor predict; 
+    Horizon::predictor predict;
+    Horizon::GimbalPose get_gim; 
 
     Horizon::DataControler data_controler_;
     int fd;
