@@ -160,6 +160,9 @@ Armor predictor::best_target()
 }
 Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
     {
+        pos[0]+=x_c2w;
+        pos[1]+=y_c2w;
+        pos[2]+=z_c2w;
         pos = pos.transpose();//转置
 
         Eigen::Matrix3f pitch_rotation_matrix_;

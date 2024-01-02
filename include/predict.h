@@ -20,6 +20,10 @@ namespace Horizon{
     static const Mat k;//相机内参
     static const float RealHeight=5.7;
     static const float RealWidth=13.5;
+    static const float z_c2w=0;
+    static const float x_c2w=0;
+    static const float y_c2w=0;
+
 enum class  CameraMoode
     {
         MonnocularCamera,//单目相机
