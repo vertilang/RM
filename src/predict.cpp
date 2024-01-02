@@ -55,6 +55,14 @@ GimbalPose predictor::point_to_armor(Eigen::Vector3f point) //将相机转向目
     float dis;
     dis=std::pow(point[0]*point[0]+point[2]*point[2],0.5);
     point_to_armor.yaw = std::atan(point[0]/point[2])*180/CV_PI;
+    if (point[2] > 0 && point[0] < 0)
+	{
+		point_to_armor.yaw+=180;
+	}
+	else if (point[2] < 0 && point[0] < 0)
+	{
+		point_to_armor.yaw -=180;
+	}
     //std::cout<<point_to_armor.yaw<<std::endl;
     //pitch   //斜抛运动求角度
     float a = -0.5*g*(std::pow(dis,2)/std::pow(v0,2));
