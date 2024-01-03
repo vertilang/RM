@@ -23,6 +23,8 @@ namespace Horizon{
     static const float z_c2w=-0.108;
     static const float x_c2w=0;
     static const float y_c2w=-0.0715;
+    static const float K_drag=0.5;
+    static const float kg=1;
 
 enum class  CameraMoode
     {
@@ -178,11 +180,8 @@ enum class PREDICTORMODE{
         DECTORSTATE  current_dector_state_;     // 这一帧识别的状态
         PREDICTORMODE current_predict_mode_;    // 这一帧预测状态
         GimbalPose predictLocation();           // 预测位置，返回相机要转到装甲板的角度
-        
         GimbalPose point_to_armor(Eigen::Vector3f point);
         
-        //void JudgeState();                      // 判断状态
-        //Point3f Iteration(cv::Point3f coordinate_m, float shootSpeed,float vx, float vz);
         
     public:
         std::shared_ptr<PnpSolver> pnp_solve_ = std::make_shared<PnpSolver>(yaml); 
