@@ -106,12 +106,9 @@ void Factory::consumer()
             visiondata.yaw_data_.f=predict.best_target_.cur_pose_.yaw;
             visiondata.pitch_data_.f=predict.best_target_.cur_pose_.pitch;
             //cout<<"   "<<predict.best_target_.cur_pose_.pitch<<"   "<<predict.best_target_.cur_pose_.yaw<<endl;
-        }
-        if(!detectors.size())
-        {
             visiondata.is_have_armor=1;
         }
-        else
+        if(!detectors.size())
         {
             visiondata.is_have_armor=0;
         }

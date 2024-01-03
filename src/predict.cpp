@@ -54,14 +54,14 @@ GimbalPose predictor::point_to_armor(Eigen::Vector3f point) //将相机转向目
     GimbalPose point_to_armor;
     float dis;
     dis=std::pow(point[0]*point[0]+point[2]*point[2],0.5);
-    point_to_armor.yaw = std::atan(point[0]/point[2])*180/CV_PI;
-    if (point[2] < 0 && point[0] < 0)
+    point_to_armor.yaw = std::asin(point[0]/dis)*180/CV_PI;
+    if (point[2] < 0 && point[0] > 0)
 	{
-		point_to_armor.yaw+=180;
+		point_to_armor.yaw=180-point_to_armor.yaw;
 	}
-	else if (point[2] < 0 && point[0] > 0)
+	else if (point[2] < 0 && point[0] < 0)
 	{
-		point_to_armor.yaw-=180;
+		point_to_armor.yaw=-180+point_to_armor.yaw;
 	}
     //std::cout<<point_to_armor.yaw<<std::endl;
     //pitch   //斜抛运动求角度
@@ -168,9 +168,9 @@ Armor predictor::best_target()
 }
 Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
     {
-        pos[0]+=x_c2w;
-        pos[1]+=y_c2w;
-        pos[2]+=z_c2w;
+        pos[0]=pos[0]+x_c2w;
+        pos[1]=pos[1]+y_c2w;
+        pos[2]=pos[2]+z_c2w;
         pos = pos.transpose();//转置
         //cout<<gm.pitch<<"   "<<gm.yaw<<endl;
         Eigen::Matrix3f pitch_rotation_matrix_;
@@ -192,6 +192,7 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
         -std::sin(gm.yaw),  0.0,  std::cos(gm.yaw);
         Eigen::Vector3f t_pos_;
         t_pos_ = yaw_rotation_matrix_ * pitch_rotation_matrix_ * pos;
+        cout<<yaw_rotation_matrix_<<endl<<pitch_rotation_matrix_<<endl;
         //cout<<"w"<<t_pos_[0]<<"   "<<t_pos_[1]<<"   "<<t_pos_[2]<<"   "<<endl;
         return t_pos_;
     }
