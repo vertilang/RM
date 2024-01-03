@@ -28,13 +28,13 @@ GimbalPose predictor::predictLocation()
         }
         case PREDICTORMODE::FOLLOW:
         {   
-            return_gimbalpose = followTarget();
+            //return_gimbalpose = followTarget();
             break;
         }
         case PREDICTORMODE::ANTIGYRO:
         {
 
-            return_gimbalpose = antiGyroTarget();
+            //return_gimbalpose = antiGyroTarget();
             break;
         }
         case PREDICTORMODE::NONEPREDICT :{
@@ -93,79 +93,6 @@ GimbalPose predictor::point_to_armor(Eigen::Vector3f point) //将相机转向目
     
     return point_to_armor;
 }
-GimbalPose predictor::followTarget() //预测下一帧目标位置   世界坐标系不变
-{   
-    // Eigen::Vector3f point1;
-    // point1 << previous_target_.center3d_.x,previous_target_.center3d_.y,previous_target_.center3d_.z;
-    // point1 = cam3ptz(previous_gimbalpose_,point1);
-    Eigen::Vector3f point2,point_shot;
-    // point2 << best_target_.center3d_.x,best_target_.center3d_.y,best_target_.center3d_.z;
-    // point2 = cam3ptz(current_gimbalpose_,point2);
-    // point_shot<<2*point2[0]-point1[0],2*point2[1]-point1[1],2*point2[2]-point1[2];
-    // point_shot=cam3ptz(current_gimbalpose_,point_shot);
-    return point_to_armor(point_shot);
-}
-GimbalPose predictor::antiGyroTarget()//选取一帧图片有两块装甲板的图片
-{   
-    // Eigen::Vector3f p1l;
-    // p1l << target1.light[0].x, target1.light[0].y, target1.light[0].z;
-    // p1l= cam3ptz(current_gimbalpose_,p1l);
-    // Eigen::Vector3f p1r;
-    // p1r<<  target1.light[1].x, target1.light[1].y, target1.light[1].z;
-    // p1r= cam3ptz(current_gimbalpose_,p1r);
-    // Eigen::Vector3f p2r;
-    // p2r<<  target2.light[1].x, target2.light[1].y, target2.light[1].z;
-    // p2r= cam3ptz(current_gimbalpose_,p2r);
-    // Eigen::Matrix2f den, ater1,ater2;
-    // den<<
-    // p1l[0]-p1r[0],p1l[2]-p1r[2],
-    // p1l[0]-p2r[0],p1l[2]-p2r[2];
-    // ater1<<
-    // p1r[0]*p1r[0]-p1l[0]*p1l[0]+p1r[2]*p1r[2]-p1l[2]*p1l[2],p1l[2]-p1r[2],
-    // p2r[0]*p2r[0]-p1l[0]*p1l[0]+p2r[2]*p2r[2]-p1l[2]*p1l[2],p1l[2]-p2r[2];
-    // ater2<<
-    // p1l[0]-p1r[0],p1r[0]*p1r[0]-p1l[0]*p1l[0]+p1r[2]*p1r[2]-p1l[2]*p1l[2],
-    // p1l[0]-p2r[0],p2r[0]*p2r[0]-p1l[0]*p1l[0]+p2r[2]*p2r[2]-p1l[2]*p1l[2];
-    // float d=ater1.determinant()/den.determinant();
-    // float e=ater2.determinant()/den.determinant();
-    // Point3f cercle;
-    // cercle.x=-d/2;
-    // cercle.y=-e/2;
-    // cercle.z=p1l[2];
-    // p1r[0]=p1r[0]-cercle.x;
-    // p1r[2]=p1r[2]-cercle.z;
-    // p2r[0]=p2r[0]-cercle.x;
-    // p2r[2]=p2r[2]-cercle.x;
-    // float cosx=(p1r[0]*p2r[0]+p1r[2]*p2r[2])/(pow(p1r[0]*p1r[0]+p1r[2]*p1r[2],0.5)*pow(p2r[0]*p2r[0]+p2r[2]*p2r[2],0.5));
-    // float x=acos(cosx);
-
-    
-    // Eigen::AngleAxis<float> rotation_vector(x,Eigen::Vector3f(cercle.x,cercle.y,cercle.z));
-    // Eigen::Matrix3f rotation_matrix=Eigen::Matrix3f::Identity();
-    // rotation_matrix=rotation_vector.toRotationMatrix();
-    Eigen::Vector3f point;
-    // best_target_=best_target();
-    // point<<best_target_.center3d_.x,best_target_.center3d_.y,best_target_.center3d_.z;
-    // point=rotation_matrix*point;
-    return point_to_armor(point);
-}
-Armor predictor::best_target()
-{
-    Armor to_target;
-    // Eigen::Vector3f point1l;
-    // point1l << target1.light[0].x, target1.light[0].y, target1.light[0].z;
-    // point1l= cam3ptz(current_gimbalpose_,point1l);
-    // Eigen::Vector3f point1r;
-    // point1r<<  target1.light[1].x, target1.light[1].y, target1.light[1].z;
-    // point1r= cam3ptz(current_gimbalpose_,point1r);
-    // float angle=sin(point1l[0]/pow(pow(point1l[0],2)+pow(point1r[2],2),0.5));
-    // if(angle>pow(3,0.5)/2&&angle<0.5)
-    // {
-    //     to_target=target1;
-    // }
-    // else to_target=target2;
-    return to_target;
-}
 Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
     {
         pos[0]=pos[0]+x_c2w;
@@ -192,8 +119,7 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
         -std::sin(gm.yaw),  0.0,  std::cos(gm.yaw);
         Eigen::Vector3f t_pos_;
         t_pos_ = yaw_rotation_matrix_ * pitch_rotation_matrix_ * pos;
-        cout<<yaw_rotation_matrix_<<endl<<pitch_rotation_matrix_<<endl;
-        //cout<<"w"<<t_pos_[0]<<"   "<<t_pos_[1]<<"   "<<t_pos_[2]<<"   "<<endl;
+        cout<<"w"<<t_pos_[0]<<"   "<<t_pos_[1]<<"   "<<t_pos_[2]<<"   "<<endl;
         return t_pos_;
     }
     PnpSolver::PnpSolver(const string yaml)
@@ -224,7 +150,7 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
 	    point_in_pixe.push_back(obj.pts[3]);
 		
 		float fHalfX = RealWidth * 0.5f;	 // 将装甲板的宽的一半作为原点的x
-		float fHalfY = RealHeight * 0.5f; // 将装甲板的宽的一半作为原点的y
+		float fHalfY = RealHeight * 0.5f; //将装甲板的宽的一半作为原点的y
 		point_in_world.emplace_back(cv::Point3f(-fHalfX, fHalfY, 0));
 		point_in_world.emplace_back(cv::Point3f( fHalfX, fHalfY, 0));
 		point_in_world.emplace_back(cv::Point3f(-fHalfX,-fHalfY, 0));
@@ -255,7 +181,7 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
 
 	    Eigen::Vector3f coord;
 	    coord << tvecs.ptr<double>(0)[0] / 100, -tvecs.ptr<double>(0)[1] / 100, tvecs.ptr<double>(0)[2] / 100;
-        //cout<<"c"<<coord[0]<<"   "<<coord[1]<<"   "<<coord[2]<<endl;
+        cout<<"c"<<coord[0]<<"   "<<coord[1]<<"   "<<coord[2]<<endl;
         coord=cam3ptz(obj.cur_pose_,coord);
         //cout<<obj.cur_pose_.pitch<<"   "<<obj.cur_pose_.yaw<<endl;
 	    return coord;

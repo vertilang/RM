@@ -93,7 +93,6 @@ void Factory::consumer()
             predict.best_target_.cur_pose_.yaw=stm32data.yaw_data_.f;
             predict.best_target_.cur_pose_.pitch=stm32data.pitch_data_.f;
             predict.best_target_.cur_pose_.timestamp=stm32data.time.f;
-            cout<<"   "<<predict.best_target_.cur_pose_.pitch<<"   "<<predict.best_target_.cur_pose_.yaw<<endl;
             predict.best_target_.pts[0].x=detector.rect.x;
             predict.best_target_.pts[0].y=detector.rect.y;
             predict.best_target_.pts[1].x=detector.rect.x+detector.rect.width;
@@ -105,7 +104,6 @@ void Factory::consumer()
             predict.init();
             visiondata.yaw_data_.f=predict.best_target_.cur_pose_.yaw;
             visiondata.pitch_data_.f=predict.best_target_.cur_pose_.pitch;
-            //cout<<"   "<<predict.best_target_.cur_pose_.pitch<<"   "<<predict.best_target_.cur_pose_.yaw<<endl;
             visiondata.is_have_armor=1;
         }
         if(!detectors.size())
@@ -129,11 +127,11 @@ void Factory::consumer()
         sprintf(test, "send pitch:%0.4f ", predict.best_target_.cur_pose_.pitch);
         cv::putText(img, test, cv::Point(img.cols/2, 160), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
 
-        // sprintf(test, " yaw:%0.4f ", predict.current_gimbalpose_.yaw);
-        // cv::putText(img, test, cv::Point(2, 200), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
+        sprintf(test, "get yaw:%0.4f ", stm32data.yaw_data_.f);
+        cv::putText(img, test, cv::Point(2, 200), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
 
-        // sprintf(test, " pitch:%0.4f ", predict.current_gimbalpose_.pitch);
-        //cv::putText(img, test, cv::Point(img.cols/2, 200), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
+        sprintf(test, "get pitch:%0.4f ", stm32data.pitch_data_.f);
+        cv::putText(img, test, cv::Point(img.cols/2, 200), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
 
          std::string windowName = "show";
          cv::namedWindow(windowName, 0);

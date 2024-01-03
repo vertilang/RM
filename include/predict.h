@@ -178,11 +178,9 @@ enum class PREDICTORMODE{
         DECTORSTATE  current_dector_state_;     // 这一帧识别的状态
         PREDICTORMODE current_predict_mode_;    // 这一帧预测状态
         GimbalPose predictLocation();           // 预测位置，返回相机要转到装甲板的角度
-        GimbalPose followTarget();              // 跟随模式
-                                                 // 预测模式
-        GimbalPose antiGyroTarget();            // 反陀螺模式
+        
         GimbalPose point_to_armor(Eigen::Vector3f point);
-        Armor best_target();                     //两个装甲板选一个
+        
         //void JudgeState();                      // 判断状态
         //Point3f Iteration(cv::Point3f coordinate_m, float shootSpeed,float vx, float vz);
         
