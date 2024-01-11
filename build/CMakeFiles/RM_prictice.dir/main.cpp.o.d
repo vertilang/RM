@@ -11,10 +11,11 @@ CMakeFiles/RM_prictice.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
- /usr/include/c++/9/ostream /usr/include/c++/9/ios \
- /usr/include/c++/9/iosfwd /usr/include/c++/9/bits/stringfwd.h \
- /usr/include/c++/9/bits/memoryfwd.h /usr/include/c++/9/bits/postypes.h \
- /usr/include/c++/9/cwchar /usr/include/wchar.h \
+ /usr/include/c++/9/pstl/pstl_config.h /usr/include/c++/9/ostream \
+ /usr/include/c++/9/ios /usr/include/c++/9/iosfwd \
+ /usr/include/c++/9/bits/stringfwd.h /usr/include/c++/9/bits/memoryfwd.h \
+ /usr/include/c++/9/bits/postypes.h /usr/include/c++/9/cwchar \
+ /usr/include/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
@@ -98,7 +99,9 @@ CMakeFiles/RM_prictice.dir/main.cpp.o: \
  /usr/include/c++/9/initializer_list \
  /usr/include/c++/9/bits/basic_string.h \
  /usr/include/c++/9/ext/alloc_traits.h \
- /usr/include/c++/9/bits/alloc_traits.h \
+ /usr/include/c++/9/bits/alloc_traits.h /usr/include/c++/9/string_view \
+ /usr/include/c++/9/limits /usr/include/c++/9/bits/functional_hash.h \
+ /usr/include/c++/9/bits/string_view.tcc \
  /usr/include/c++/9/ext/string_conversions.h /usr/include/c++/9/cstdlib \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -126,7 +129,6 @@ CMakeFiles/RM_prictice.dir/main.cpp.o: \
  /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
- /usr/include/c++/9/bits/functional_hash.h \
  /usr/include/c++/9/bits/basic_string.tcc \
  /usr/include/c++/9/bits/locale_classes.tcc \
  /usr/include/c++/9/system_error \
@@ -153,7 +155,6 @@ CMakeFiles/RM_prictice.dir/main.cpp.o: \
  /usr/local/include/opencv4/opencv2/core.hpp \
  /usr/local/include/opencv4/opencv2/core/cvdef.h \
  /usr/local/include/opencv4/opencv2/core/version.hpp \
- /usr/include/c++/9/limits \
  /usr/local/include/opencv4/opencv2/core/hal/interface.h \
  /usr/include/c++/9/cstddef \
  /usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
@@ -178,6 +179,22 @@ CMakeFiles/RM_prictice.dir/main.cpp.o: \
  /usr/include/c++/9/bits/stl_heap.h /usr/include/c++/9/bits/stl_tempbuf.h \
  /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/uniform_int_dist.h \
+ /usr/include/c++/9/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/9/functional /usr/include/c++/9/tuple \
+ /usr/include/c++/9/bits/uses_allocator.h \
+ /usr/include/c++/9/bits/invoke.h /usr/include/c++/9/bits/refwrap.h \
+ /usr/include/c++/9/bits/std_function.h /usr/include/c++/9/unordered_map \
+ /usr/include/c++/9/ext/aligned_buffer.h \
+ /usr/include/c++/9/bits/hashtable.h \
+ /usr/include/c++/9/bits/hashtable_policy.h \
+ /usr/include/c++/9/bits/node_handle.h /usr/include/c++/9/optional \
+ /usr/include/c++/9/bits/enable_special_members.h \
+ /usr/include/c++/9/bits/unordered_map.h \
+ /usr/include/c++/9/bits/erase_if.h /usr/include/c++/9/vector \
+ /usr/include/c++/9/bits/stl_uninitialized.h \
+ /usr/include/c++/9/bits/stl_vector.h \
+ /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
+ /usr/include/c++/9/pstl/execution_defs.h \
  /usr/local/include/opencv4/opencv2/core/cvstd.hpp \
  /usr/include/c++/9/cstring /usr/include/c++/9/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -190,21 +207,30 @@ CMakeFiles/RM_prictice.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
+ /usr/include/c++/9/bits/specfun.h /usr/include/c++/9/tr1/gamma.tcc \
+ /usr/include/c++/9/tr1/special_function_util.h \
+ /usr/include/c++/9/tr1/bessel_function.tcc \
+ /usr/include/c++/9/tr1/beta_function.tcc \
+ /usr/include/c++/9/tr1/ell_integral.tcc \
+ /usr/include/c++/9/tr1/exp_integral.tcc \
+ /usr/include/c++/9/tr1/hypergeometric.tcc \
+ /usr/include/c++/9/tr1/legendre_function.tcc \
+ /usr/include/c++/9/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/9/tr1/poly_hermite.tcc \
+ /usr/include/c++/9/tr1/poly_laguerre.tcc \
+ /usr/include/c++/9/tr1/riemann_zeta.tcc \
  /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
- /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_uninitialized.h \
- /usr/include/c++/9/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_raw_storage_iter.h \
  /usr/include/c++/9/ext/concurrence.h \
- /usr/include/c++/9/bits/uses_allocator.h \
- /usr/include/c++/9/bits/unique_ptr.h /usr/include/c++/9/tuple \
- /usr/include/c++/9/bits/invoke.h /usr/include/c++/9/bits/shared_ptr.h \
+ /usr/include/c++/9/bits/unique_ptr.h \
+ /usr/include/c++/9/bits/shared_ptr.h \
  /usr/include/c++/9/bits/shared_ptr_base.h \
  /usr/include/c++/9/bits/allocated_ptr.h \
- /usr/include/c++/9/bits/refwrap.h \
- /usr/include/c++/9/ext/aligned_buffer.h \
  /usr/include/c++/9/bits/shared_ptr_atomic.h \
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/backward/auto_ptr.h \
+ /usr/include/c++/9/pstl/glue_memory_defs.h \
  /usr/local/include/opencv4/opencv2/core/neon_utils.hpp \
  /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp \
  /usr/include/assert.h /usr/local/include/opencv4/opencv2/core/check.hpp \
@@ -215,8 +241,6 @@ CMakeFiles/RM_prictice.dir/main.cpp.o: \
  /usr/local/include/opencv4/opencv2/core/types.hpp \
  /usr/include/c++/9/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h \
- /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_vector.h \
- /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
  /usr/local/include/opencv4/opencv2/core/mat.hpp \
  /usr/local/include/opencv4/opencv2/core/bufferpool.hpp \
  /usr/local/include/opencv4/opencv2/core/mat.inl.hpp \
@@ -226,7 +250,6 @@ CMakeFiles/RM_prictice.dir/main.cpp.o: \
  /usr/include/c++/9/complex /usr/include/c++/9/sstream \
  /usr/include/c++/9/bits/sstream.tcc \
  /usr/local/include/opencv4/opencv2/core/utility.hpp \
- /usr/include/c++/9/functional /usr/include/c++/9/bits/std_function.h \
  /usr/include/c++/9/mutex /usr/include/c++/9/chrono \
  /usr/include/c++/9/ratio /usr/include/c++/9/ctime \
  /usr/include/c++/9/bits/parse_numbers.h \
@@ -248,7 +271,6 @@ CMakeFiles/RM_prictice.dir/main.cpp.o: \
  /usr/local/include/opencv4/opencv2/dnn/dict.hpp /usr/include/c++/9/map \
  /usr/include/c++/9/bits/stl_tree.h /usr/include/c++/9/bits/stl_map.h \
  /usr/include/c++/9/bits/stl_multimap.h \
- /usr/include/c++/9/bits/erase_if.h \
  /usr/local/include/opencv4/opencv2/dnn/layer.hpp \
  /usr/local/include/opencv4/opencv2/dnn/dnn.inl.hpp \
  /usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
@@ -270,9 +292,6 @@ CMakeFiles/RM_prictice.dir/main.cpp.o: \
  /usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h \
  /usr/local/include/opencv4/opencv2/flann/dist.h \
  /usr/local/include/opencv4/opencv2/flann/heap.h \
- /usr/include/c++/9/unordered_map /usr/include/c++/9/bits/hashtable.h \
- /usr/include/c++/9/bits/hashtable_policy.h \
- /usr/include/c++/9/bits/unordered_map.h \
  /usr/local/include/opencv4/opencv2/flann/allocator.h \
  /usr/local/include/opencv4/opencv2/flann/random.h \
  /usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h \
@@ -338,7 +357,8 @@ CMakeFiles/RM_prictice.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
  /usr/include/c++/9/bits/fstream.tcc /usr/include/c++/9/numeric \
- /usr/include/c++/9/bits/stl_numeric.h /usr/include/dirent.h \
+ /usr/include/c++/9/bits/stl_numeric.h \
+ /usr/include/c++/9/pstl/glue_numeric_defs.h /usr/include/dirent.h \
  /usr/include/x86_64-linux-gnu/bits/dirent.h \
  /usr/include/x86_64-linux-gnu/bits/dirent_ext.h \
  /home/vertilang/TensorRT-8.5.3.1/include/NvInfer.h \
@@ -393,186 +413,250 @@ CMakeFiles/RM_prictice.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
  /usr/include/asm-generic/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
- /usr/local/include/eigen3/Eigen/Core \
- /usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/Macros.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/MKL_support.h \
+ /usr/local/include/ceres/jet.h /usr/include/eigen3/Eigen/Core \
+ /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
+ /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
+ /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
  /usr/include/c++/9/cassert \
- /usr/local/include/eigen3/Eigen/src/Core/util/Constants.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/Meta.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/XprHelper.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/Memory.h \
- /usr/local/include/eigen3/Eigen/src/Core/NumTraits.h \
- /usr/local/include/eigen3/Eigen/src/Core/MathFunctions.h \
- /usr/local/include/eigen3/Eigen/src/Core/GenericPacketMath.h \
- /usr/local/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/Half.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMathHalf.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/TypeCasting.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
- /usr/local/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
- /usr/local/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
- /usr/local/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
- /usr/local/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
- /usr/local/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
- /usr/local/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h \
- /usr/local/include/eigen3/Eigen/src/Core/IO.h \
- /usr/local/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h \
- /usr/local/include/eigen3/Eigen/src/Core/DenseBase.h \
- /usr/local/include/eigen3/Eigen/src/plugins/BlockMethods.h \
- /usr/local/include/eigen3/Eigen/src/Core/MatrixBase.h \
- /usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
- /usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h \
- /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
- /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
- /usr/local/include/eigen3/Eigen/src/Core/EigenBase.h \
- /usr/local/include/eigen3/Eigen/src/Core/Product.h \
- /usr/local/include/eigen3/Eigen/src/Core/CoreEvaluators.h \
- /usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h \
- /usr/local/include/eigen3/Eigen/src/Core/Assign.h \
- /usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h \
- /usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h \
- /usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
- /usr/local/include/eigen3/Eigen/src/Core/DenseStorage.h \
- /usr/local/include/eigen3/Eigen/src/Core/NestByValue.h \
- /usr/local/include/eigen3/Eigen/src/Core/ReturnByValue.h \
- /usr/local/include/eigen3/Eigen/src/Core/NoAlias.h \
- /usr/local/include/eigen3/Eigen/src/Core/PlainObjectBase.h \
- /usr/local/include/eigen3/Eigen/src/Core/Matrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/Array.h \
- /usr/local/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h \
- /usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h \
- /usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h \
- /usr/local/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h \
- /usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryView.h \
- /usr/local/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h \
- /usr/local/include/eigen3/Eigen/src/Core/Dot.h \
- /usr/local/include/eigen3/Eigen/src/Core/StableNorm.h \
- /usr/local/include/eigen3/Eigen/src/Core/Stride.h \
- /usr/local/include/eigen3/Eigen/src/Core/MapBase.h \
- /usr/local/include/eigen3/Eigen/src/Core/Map.h \
- /usr/local/include/eigen3/Eigen/src/Core/Ref.h \
- /usr/local/include/eigen3/Eigen/src/Core/Block.h \
- /usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h \
- /usr/local/include/eigen3/Eigen/src/Core/Transpose.h \
- /usr/local/include/eigen3/Eigen/src/Core/DiagonalMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/Diagonal.h \
- /usr/local/include/eigen3/Eigen/src/Core/DiagonalProduct.h \
- /usr/local/include/eigen3/Eigen/src/Core/Redux.h \
- /usr/local/include/eigen3/Eigen/src/Core/Visitor.h \
- /usr/local/include/eigen3/Eigen/src/Core/Fuzzy.h \
- /usr/local/include/eigen3/Eigen/src/Core/Swap.h \
- /usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h \
- /usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h \
- /usr/local/include/eigen3/Eigen/src/Core/Solve.h \
- /usr/local/include/eigen3/Eigen/src/Core/Inverse.h \
- /usr/local/include/eigen3/Eigen/src/Core/SolverBase.h \
- /usr/local/include/eigen3/Eigen/src/Core/PermutationMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/Transpositions.h \
- /usr/local/include/eigen3/Eigen/src/Core/TriangularMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/SelfAdjointView.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/Parallelizer.h \
- /usr/local/include/eigen3/Eigen/src/Core/ProductEvaluators.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/SolveTriangular.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
- /usr/local/include/eigen3/Eigen/src/Core/BandMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/CoreIterators.h \
- /usr/local/include/eigen3/Eigen/src/Core/ConditionEstimator.h \
- /usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h \
- /usr/local/include/eigen3/Eigen/src/Core/Select.h \
- /usr/local/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
- /usr/local/include/eigen3/Eigen/src/Core/Random.h \
- /usr/local/include/eigen3/Eigen/src/Core/Replicate.h \
- /usr/local/include/eigen3/Eigen/src/Core/Reverse.h \
- /usr/local/include/eigen3/Eigen/src/Core/ArrayWrapper.h \
- /usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
+ /usr/include/eigen3/Eigen/src/Core/util/Constants.h \
+ /usr/include/eigen3/Eigen/src/Core/util/Meta.h \
+ /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
+ /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
+ /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \
+ /usr/include/eigen3/Eigen/src/Core/util/Memory.h \
+ /usr/include/eigen3/Eigen/src/Core/NumTraits.h \
+ /usr/include/eigen3/Eigen/src/Core/MathFunctions.h \
+ /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h \
+ /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/Half.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMathHalf.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/TypeCasting.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
+ /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
+ /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
+ /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
+ /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
+ /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
+ /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h \
+ /usr/include/eigen3/Eigen/src/Core/IO.h \
+ /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h \
+ /usr/include/eigen3/Eigen/src/Core/DenseBase.h \
+ /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h \
+ /usr/include/eigen3/Eigen/src/Core/MatrixBase.h \
+ /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
+ /usr/include/eigen3/Eigen/src/Core/EigenBase.h \
+ /usr/include/eigen3/Eigen/src/Core/Product.h \
+ /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h \
+ /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h \
+ /usr/include/eigen3/Eigen/src/Core/Assign.h \
+ /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
+ /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h \
+ /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
+ /usr/include/eigen3/Eigen/src/Core/DenseStorage.h \
+ /usr/include/eigen3/Eigen/src/Core/NestByValue.h \
+ /usr/include/eigen3/Eigen/src/Core/ReturnByValue.h \
+ /usr/include/eigen3/Eigen/src/Core/NoAlias.h \
+ /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h \
+ /usr/include/eigen3/Eigen/src/Core/Matrix.h \
+ /usr/include/eigen3/Eigen/src/Core/Array.h \
+ /usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h \
+ /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h \
+ /usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h \
+ /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h \
+ /usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h \
+ /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h \
+ /usr/include/eigen3/Eigen/src/Core/Dot.h \
+ /usr/include/eigen3/Eigen/src/Core/StableNorm.h \
+ /usr/include/eigen3/Eigen/src/Core/Stride.h \
+ /usr/include/eigen3/Eigen/src/Core/MapBase.h \
+ /usr/include/eigen3/Eigen/src/Core/Map.h \
+ /usr/include/eigen3/Eigen/src/Core/Ref.h \
+ /usr/include/eigen3/Eigen/src/Core/Block.h \
+ /usr/include/eigen3/Eigen/src/Core/VectorBlock.h \
+ /usr/include/eigen3/Eigen/src/Core/Transpose.h \
+ /usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/Diagonal.h \
+ /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h \
+ /usr/include/eigen3/Eigen/src/Core/Redux.h \
+ /usr/include/eigen3/Eigen/src/Core/Visitor.h \
+ /usr/include/eigen3/Eigen/src/Core/Fuzzy.h \
+ /usr/include/eigen3/Eigen/src/Core/Swap.h \
+ /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h \
+ /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h \
+ /usr/include/eigen3/Eigen/src/Core/Solve.h \
+ /usr/include/eigen3/Eigen/src/Core/Inverse.h \
+ /usr/include/eigen3/Eigen/src/Core/SolverBase.h \
+ /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/Transpositions.h \
+ /usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h \
+ /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+ /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h \
+ /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h \
+ /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h \
+ /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h \
+ /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+ /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+ /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h \
+ /usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h \
+ /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
+ /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
+ /usr/include/eigen3/Eigen/src/Core/BandMatrix.h \
+ /usr/include/eigen3/Eigen/src/Core/CoreIterators.h \
+ /usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h \
+ /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h \
+ /usr/include/eigen3/Eigen/src/Core/Select.h \
+ /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
+ /usr/include/eigen3/Eigen/src/Core/Random.h \
+ /usr/include/eigen3/Eigen/src/Core/Replicate.h \
+ /usr/include/eigen3/Eigen/src/Core/Reverse.h \
+ /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h \
+ /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
+ /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
+ /usr/local/include/ceres/internal/jet_traits.h \
+ /usr/local/include/ceres/internal/integer_sequence_algorithm.h \
+ /usr/local/include/ceres/jet_fwd.h \
+ /usr/local/include/ceres/internal/port.h \
+ /usr/local/include/ceres/ceres.h \
+ /usr/local/include/ceres/autodiff_cost_function.h \
+ /usr/local/include/ceres/internal/autodiff.h \
+ /usr/local/include/ceres/internal/array_selector.h \
+ /usr/local/include/ceres/internal/fixed_array.h \
+ /usr/local/include/ceres/internal/memory.h /usr/include/glog/logging.h \
+ /usr/include/inttypes.h /usr/include/gflags/gflags.h \
+ /usr/include/gflags/gflags_declare.h /usr/include/gflags/gflags_gflags.h \
+ /usr/include/glog/log_severity.h /usr/include/glog/vlog_is_on.h \
+ /usr/local/include/ceres/types.h \
+ /usr/local/include/ceres/internal/disable_warnings.h \
+ /usr/local/include/ceres/internal/export.h \
+ /usr/local/include/ceres/internal/reenable_warnings.h \
+ /usr/local/include/ceres/internal/eigen.h \
+ /usr/local/include/ceres/internal/parameter_dims.h \
+ /usr/local/include/ceres/internal/variadic_evaluate.h \
+ /usr/local/include/ceres/cost_function.h \
+ /usr/local/include/ceres/sized_cost_function.h \
+ /usr/local/include/ceres/internal/parameter_dims.h \
+ /usr/local/include/ceres/autodiff_first_order_function.h \
+ /usr/local/include/ceres/first_order_function.h \
+ /usr/local/include/ceres/autodiff_manifold.h \
+ /usr/local/include/ceres/manifold.h \
+ /usr/local/include/ceres/conditioned_cost_function.h \
+ /usr/local/include/ceres/constants.h /usr/local/include/ceres/context.h \
+ /usr/local/include/ceres/cost_function_to_functor.h \
+ /usr/local/include/ceres/dynamic_cost_function_to_functor.h \
+ /usr/local/include/ceres/dynamic_cost_function.h \
+ /usr/local/include/ceres/covariance.h \
+ /usr/local/include/ceres/internal/config.h \
+ /usr/local/include/ceres/crs_matrix.h \
+ /usr/local/include/ceres/dynamic_autodiff_cost_function.h \
+ /usr/local/include/ceres/dynamic_numeric_diff_cost_function.h \
+ /usr/local/include/ceres/internal/numeric_diff.h \
+ /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Core \
+ /usr/include/eigen3/Eigen/LU /usr/include/eigen3/Eigen/src/misc/Kernel.h \
+ /usr/include/eigen3/Eigen/src/misc/Image.h \
+ /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
+ /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
+ /usr/include/eigen3/Eigen/src/LU/Determinant.h \
+ /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
+ /usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h \
+ /usr/include/eigen3/Eigen/Cholesky /usr/include/eigen3/Eigen/Jacobi \
+ /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
+ /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
+ /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
+ /usr/include/eigen3/Eigen/QR /usr/include/eigen3/Eigen/Householder \
+ /usr/include/eigen3/Eigen/src/Householder/Householder.h \
+ /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
+ /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
+ /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h \
+ /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
+ /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
+ /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+ /usr/include/eigen3/Eigen/SVD \
+ /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
+ /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
+ /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
+ /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
+ /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+ /usr/include/eigen3/Eigen/Geometry \
+ /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
+ /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
+ /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
+ /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Transform.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Translation.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Scaling.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
+ /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
+ /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
+ /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
+ /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h \
+ /usr/include/eigen3/Eigen/Eigenvalues \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+ /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ /usr/include/eigen3/Eigen/StdVector \
+ /usr/include/eigen3/Eigen/src/StlSupport/StdVector.h \
+ /usr/include/eigen3/Eigen/src/StlSupport/details.h \
+ /usr/local/include/ceres/numeric_diff_options.h \
+ /usr/local/include/ceres/evaluation_callback.h \
+ /usr/local/include/ceres/gradient_checker.h \
+ /usr/local/include/ceres/gradient_problem.h \
+ /usr/local/include/ceres/gradient_problem_solver.h \
+ /usr/local/include/ceres/iteration_callback.h \
+ /usr/local/include/ceres/line_manifold.h \
+ /usr/local/include/ceres/internal/householder_vector.h \
+ /usr/local/include/ceres/internal/sphere_manifold_functions.h \
+ /usr/local/include/ceres/loss_function.h \
+ /usr/local/include/ceres/numeric_diff_cost_function.h \
+ /usr/local/include/ceres/numeric_diff_first_order_function.h \
+ /usr/local/include/ceres/ordered_groups.h \
+ /usr/local/include/ceres/problem.h \
+ /usr/local/include/ceres/product_manifold.h \
+ /usr/local/include/ceres/solver.h /usr/include/c++/9/unordered_set \
+ /usr/include/c++/9/bits/unordered_set.h \
+ /usr/local/include/ceres/sphere_manifold.h \
+ /usr/local/include/ceres/version.h /usr/local/include/eigen3/Eigen/Core \
  /usr/local/include/eigen3/Eigen/Dense \
  /usr/local/include/eigen3/Eigen/Core /usr/local/include/eigen3/Eigen/LU \
- /usr/local/include/eigen3/Eigen/src/misc/Kernel.h \
- /usr/local/include/eigen3/Eigen/src/misc/Image.h \
- /usr/local/include/eigen3/Eigen/src/LU/FullPivLU.h \
- /usr/local/include/eigen3/Eigen/src/LU/PartialPivLU.h \
- /usr/local/include/eigen3/Eigen/src/LU/Determinant.h \
- /usr/local/include/eigen3/Eigen/src/LU/InverseImpl.h \
- /usr/local/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h \
  /usr/local/include/eigen3/Eigen/Cholesky \
- /usr/local/include/eigen3/Eigen/Jacobi \
- /usr/local/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
- /usr/local/include/eigen3/Eigen/src/Cholesky/LLT.h \
- /usr/local/include/eigen3/Eigen/src/Cholesky/LDLT.h \
- /usr/local/include/eigen3/Eigen/QR \
- /usr/local/include/eigen3/Eigen/Householder \
- /usr/local/include/eigen3/Eigen/src/Householder/Householder.h \
- /usr/local/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
- /usr/local/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
- /usr/local/include/eigen3/Eigen/src/QR/HouseholderQR.h \
- /usr/local/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
- /usr/local/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
- /usr/local/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
- /usr/local/include/eigen3/Eigen/SVD \
- /usr/local/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
- /usr/local/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
- /usr/local/include/eigen3/Eigen/src/SVD/SVDBase.h \
- /usr/local/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
- /usr/local/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+ /usr/local/include/eigen3/Eigen/QR /usr/local/include/eigen3/Eigen/SVD \
  /usr/local/include/eigen3/Eigen/Geometry \
- /usr/local/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
- /usr/local/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
- /usr/local/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
- /usr/local/include/eigen3/Eigen/src/Geometry/RotationBase.h \
- /usr/local/include/eigen3/Eigen/src/Geometry/Rotation2D.h \
- /usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h \
- /usr/local/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
- /usr/local/include/eigen3/Eigen/src/Geometry/Transform.h \
- /usr/local/include/eigen3/Eigen/src/Geometry/Translation.h \
- /usr/local/include/eigen3/Eigen/src/Geometry/Scaling.h \
- /usr/local/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
- /usr/local/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
- /usr/local/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
- /usr/local/include/eigen3/Eigen/src/Geometry/Umeyama.h \
- /usr/local/include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h \
  /usr/local/include/eigen3/Eigen/Eigenvalues \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
- /usr/local/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
  /usr/local/include/eigen3/Eigen/Eigen \
  /usr/local/include/eigen3/Eigen/Dense \
  /usr/local/include/eigen3/Eigen/Sparse \
  /usr/local/include/eigen3/Eigen/SparseCore \
+ /usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseUtil.h \
  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseMatrixBase.h \
  /usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
@@ -607,6 +691,7 @@ CMakeFiles/RM_prictice.dir/main.cpp.o: \
  /usr/local/include/eigen3/Eigen/src/SparseCore/SparsePermutation.h \
  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseFuzzy.h \
  /usr/local/include/eigen3/Eigen/src/SparseCore/SparseSolverBase.h \
+ /usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
  /usr/local/include/eigen3/Eigen/OrderingMethods \
  /usr/local/include/eigen3/Eigen/src/OrderingMethods/Amd.h \
  /usr/local/include/eigen3/Eigen/src/Core/util/NonMPL2.h \

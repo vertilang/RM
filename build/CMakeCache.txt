@@ -701,9 +701,6 @@ SuiteSparse_SPQR_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libspqr.so
 //The directory containing a CMake configuration file for TBB.
 TBB_DIR:PATH=TBB_DIR-NOTFOUND
 
-//The directory containing a CMake configuration file for ceres.
-ceres_DIR:PATH=ceres_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for fmt.
 fmt_DIR:PATH=/usr/local/lib/cmake/fmt
 

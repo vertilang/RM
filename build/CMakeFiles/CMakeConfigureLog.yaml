@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-SV1azL"
-      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-SV1azL"
+      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-jIIo2d"
+      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-jIIo2d"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,13 +71,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-SV1azL'
+        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-jIIo2d'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_30aed/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_30aed.dir/build.make CMakeFiles/cmTC_30aed.dir/build
-        make[1]: Entering directory '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-SV1azL'
-        Building C object CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fe48f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_fe48f.dir/build.make CMakeFiles/cmTC_fe48f.dir/build
+        make[1]: Entering directory '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-jIIo2d'
+        Building C object CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -86,8 +86,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc9PP34O.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccoL3Tbi.s
         GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -107,15 +107,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o /tmp/cc9PP34O.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o /tmp/ccoL3Tbi.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/local/cuda/lib64/../lib/:/usr/local/cuda/lib64/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:./:/usr/local/cuda/lib64/:/usr/local/cuda/lib64/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-        Linking C executable cmTC_30aed
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30aed.dir/link.txt --verbose=1
-        /usr/bin/cc  -v CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o -o cmTC_30aed 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_fe48f
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe48f.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o -o cmTC_fe48f 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -127,10 +127,10 @@ events:
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/local/cuda/lib64/../lib/:/usr/local/cuda/lib64/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:./:/usr/local/cuda/lib64/:/usr/local/cuda/lib64/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_30aed' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoKXGwi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_30aed /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/local/cuda/lib64/../lib -L/usr/local/cuda/lib64/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L. -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib64 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_30aed' '-mtune=generic' '-march=x86-64'
-        make[1]: Leaving directory '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-SV1azL'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fe48f' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccK0o79M.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fe48f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/local/cuda/lib64/../lib -L/usr/local/cuda/lib64/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L. -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib64 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fe48f' '-mtune=generic' '-march=x86-64'
+        make[1]: Leaving directory '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-jIIo2d'
         
       exitCode: 0
   -
@@ -164,13 +164,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-SV1azL']
+        ignore line: [Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-jIIo2d']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_30aed/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_30aed.dir/build.make CMakeFiles/cmTC_30aed.dir/build]
-        ignore line: [make[1]: Entering directory '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-SV1azL']
-        ignore line: [Building C object CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fe48f/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_fe48f.dir/build.make CMakeFiles/cmTC_fe48f.dir/build]
+        ignore line: [make[1]: Entering directory '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-jIIo2d']
+        ignore line: [Building C object CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -179,8 +179,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc9PP34O.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccoL3Tbi.s]
         ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -200,15 +200,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o /tmp/cc9PP34O.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o /tmp/ccoL3Tbi.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/local/cuda/lib64/../lib/:/usr/local/cuda/lib64/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:./:/usr/local/cuda/lib64/:/usr/local/cuda/lib64/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking C executable cmTC_30aed]
-        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30aed.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o -o cmTC_30aed ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_fe48f]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe48f.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o -o cmTC_fe48f ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -220,13 +220,13 @@ events:
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/local/cuda/lib64/../lib/:/usr/local/cuda/lib64/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:./:/usr/local/cuda/lib64/:/usr/local/cuda/lib64/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_30aed' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoKXGwi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_30aed /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/local/cuda/lib64/../lib -L/usr/local/cuda/lib64/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L. -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib64 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fe48f' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccK0o79M.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fe48f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/local/cuda/lib64/../lib -L/usr/local/cuda/lib64/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L. -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib64 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccoKXGwi.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccK0o79M.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -244,7 +244,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_30aed] ==> ignore
+          arg [cmTC_fe48f] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -261,7 +261,7 @@ events:
           arg [-L/usr/local/cuda/lib64] ==> dir [/usr/local/cuda/lib64]
           arg [-L/usr/local/cuda/lib64] ==> dir [/usr/local/cuda/lib64]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [CMakeFiles/cmTC_30aed.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_fe48f.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -305,8 +305,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-MYcFqI"
-      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-MYcFqI"
+      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-zBwOub"
+      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-zBwOub"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -315,13 +315,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-MYcFqI'
+        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-zBwOub'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_83f24/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_83f24.dir/build.make CMakeFiles/cmTC_83f24.dir/build
-        make[1]: Entering directory '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-MYcFqI'
-        Building CXX object CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_91468/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_91468.dir/build.make CMakeFiles/cmTC_91468.dir/build
+        make[1]: Entering directory '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-zBwOub'
+        Building CXX object CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -330,8 +330,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccMUojCp.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccOLKziU.s
         GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -355,15 +355,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccMUojCp.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccOLKziU.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/local/cuda/lib64/../lib/:/usr/local/cuda/lib64/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:./:/usr/local/cuda/lib64/:/usr/local/cuda/lib64/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        Linking CXX executable cmTC_83f24
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83f24.dir/link.txt --verbose=1
-        /usr/bin/c++  -v CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_83f24 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_91468
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91468.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_91468 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -375,10 +375,10 @@ events:
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/local/cuda/lib64/../lib/:/usr/local/cuda/lib64/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:./:/usr/local/cuda/lib64/:/usr/local/cuda/lib64/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_83f24' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEoGg0R.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_83f24 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/local/cuda/lib64/../lib -L/usr/local/cuda/lib64/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L. -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib64 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_83f24' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        make[1]: Leaving directory '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-MYcFqI'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_91468' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdm4Agl.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_91468 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/local/cuda/lib64/../lib -L/usr/local/cuda/lib64/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L. -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib64 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_91468' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        make[1]: Leaving directory '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-zBwOub'
         
       exitCode: 0
   -
@@ -418,13 +418,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-MYcFqI']
+        ignore line: [Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-zBwOub']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_83f24/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_83f24.dir/build.make CMakeFiles/cmTC_83f24.dir/build]
-        ignore line: [make[1]: Entering directory '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-MYcFqI']
-        ignore line: [Building CXX object CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_91468/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_91468.dir/build.make CMakeFiles/cmTC_91468.dir/build]
+        ignore line: [make[1]: Entering directory '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-zBwOub']
+        ignore line: [Building CXX object CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -433,8 +433,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccMUojCp.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccOLKziU.s]
         ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -458,15 +458,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccMUojCp.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccOLKziU.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/local/cuda/lib64/../lib/:/usr/local/cuda/lib64/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:./:/usr/local/cuda/lib64/:/usr/local/cuda/lib64/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking CXX executable cmTC_83f24]
-        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83f24.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_83f24 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_91468]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91468.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_91468 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -478,13 +478,13 @@ events:
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/local/cuda/lib64/../lib/:/usr/local/cuda/lib64/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:./:/usr/local/cuda/lib64/:/usr/local/cuda/lib64/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_83f24' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEoGg0R.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_83f24 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/local/cuda/lib64/../lib -L/usr/local/cuda/lib64/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L. -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib64 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_91468' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdm4Agl.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_91468 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/local/cuda/lib64/../lib -L/usr/local/cuda/lib64/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L. -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib64 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccEoGg0R.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccdm4Agl.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -502,7 +502,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_83f24] ==> ignore
+          arg [cmTC_91468] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -519,7 +519,7 @@ events:
           arg [-L/usr/local/cuda/lib64] ==> dir [/usr/local/cuda/lib64]
           arg [-L/usr/local/cuda/lib64] ==> dir [/usr/local/cuda/lib64]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [CMakeFiles/cmTC_83f24.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_91468.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -550,10 +550,6 @@ events:
         implicit fwks: []
       
       
-...
-
----
-events:
   -
     kind: "try_compile-v1"
     backtrace:
@@ -565,8 +561,8 @@ events:
       - "/usr/local/lib/cmake/Ceres/CeresConfig.cmake:181 (find_dependency)"
       - "CMakeLists.txt:37 (find_package)"
     directories:
-      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-K0XGkC"
-      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-K0XGkC"
+      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-8ymWSc"
+      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-8ymWSc"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -576,22 +572,22 @@ events:
       variable: "BLAS_WORKS"
       cached: true
       stdout: |
-        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-K0XGkC'
+        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-8ymWSc'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_576cd/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_576cd.dir/build.make CMakeFiles/cmTC_576cd.dir/build
-        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-K0XGkC”
-        Building C object CMakeFiles/cmTC_576cd.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_576cd.dir/CheckFunctionExists.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-K0XGkC/CheckFunctionExists.c
-        Linking C executable cmTC_576cd
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_576cd.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_576cd.dir/CheckFunctionExists.c.o -o cmTC_576cd 
-        /usr/bin/ld: CMakeFiles/cmTC_576cd.dir/CheckFunctionExists.c.o: in function `main':
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4e4c7/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_4e4c7.dir/build.make CMakeFiles/cmTC_4e4c7.dir/build
+        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-8ymWSc”
+        Building C object CMakeFiles/cmTC_4e4c7.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_4e4c7.dir/CheckFunctionExists.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-8ymWSc/CheckFunctionExists.c
+        Linking C executable cmTC_4e4c7
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e4c7.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_4e4c7.dir/CheckFunctionExists.c.o -o cmTC_4e4c7 
+        /usr/bin/ld: CMakeFiles/cmTC_4e4c7.dir/CheckFunctionExists.c.o: in function `main':
         CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
         collect2: error: ld returned 1 exit status
-        make[1]: *** [CMakeFiles/cmTC_576cd.dir/build.make:99：cmTC_576cd] 错误 1
-        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-K0XGkC”
-        make: *** [Makefile:127：cmTC_576cd/fast] 错误 2
+        make[1]: *** [CMakeFiles/cmTC_4e4c7.dir/build.make:99：cmTC_4e4c7] 错误 1
+        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-8ymWSc”
+        make: *** [Makefile:127：cmTC_4e4c7/fast] 错误 2
         
       exitCode: 2
   -
@@ -609,8 +605,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-muiZmB"
-      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-muiZmB"
+      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-OcskCa"
+      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-OcskCa"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -620,25 +616,25 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-muiZmB'
+        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-OcskCa'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5da22/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_5da22.dir/build.make CMakeFiles/cmTC_5da22.dir/build
-        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-muiZmB”
-        Building C object CMakeFiles/cmTC_5da22.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_5da22.dir/src.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-muiZmB/src.c
-        Linking C executable cmTC_5da22
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5da22.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_5da22.dir/src.c.o -o cmTC_5da22 
-        /usr/bin/ld: CMakeFiles/cmTC_5da22.dir/src.c.o: in function `main':
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8d999/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_8d999.dir/build.make CMakeFiles/cmTC_8d999.dir/build
+        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-OcskCa”
+        Building C object CMakeFiles/cmTC_8d999.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_8d999.dir/src.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-OcskCa/src.c
+        Linking C executable cmTC_8d999
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d999.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_8d999.dir/src.c.o -o cmTC_8d999 
+        /usr/bin/ld: CMakeFiles/cmTC_8d999.dir/src.c.o: in function `main':
         src.c:(.text+0x46): undefined reference to `pthread_create'
         /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
         /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
         /usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
         collect2: error: ld returned 1 exit status
-        make[1]: *** [CMakeFiles/cmTC_5da22.dir/build.make:99：cmTC_5da22] 错误 1
-        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-muiZmB”
-        make: *** [Makefile:127：cmTC_5da22/fast] 错误 2
+        make[1]: *** [CMakeFiles/cmTC_8d999.dir/build.make:99：cmTC_8d999] 错误 1
+        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-OcskCa”
+        make: *** [Makefile:127：cmTC_8d999/fast] 错误 2
         
       exitCode: 2
   -
@@ -655,8 +651,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-3USLHB"
-      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-3USLHB"
+      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-r9Hmid"
+      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-r9Hmid"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -666,21 +662,21 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-3USLHB'
+        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-r9Hmid'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_16898/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_16898.dir/build.make CMakeFiles/cmTC_16898.dir/build
-        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-3USLHB”
-        Building C object CMakeFiles/cmTC_16898.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_16898.dir/CheckFunctionExists.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-3USLHB/CheckFunctionExists.c
-        Linking C executable cmTC_16898
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16898.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_16898.dir/CheckFunctionExists.c.o -o cmTC_16898  -lpthreads 
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ff17a/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ff17a.dir/build.make CMakeFiles/cmTC_ff17a.dir/build
+        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-r9Hmid”
+        Building C object CMakeFiles/cmTC_ff17a.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_ff17a.dir/CheckFunctionExists.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-r9Hmid/CheckFunctionExists.c
+        Linking C executable cmTC_ff17a
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff17a.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_ff17a.dir/CheckFunctionExists.c.o -o cmTC_ff17a  -lpthreads 
         /usr/bin/ld: 找不到 -lpthreads
         collect2: error: ld returned 1 exit status
-        make[1]: *** [CMakeFiles/cmTC_16898.dir/build.make:99：cmTC_16898] 错误 1
-        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-3USLHB”
-        make: *** [Makefile:127：cmTC_16898/fast] 错误 2
+        make[1]: *** [CMakeFiles/cmTC_ff17a.dir/build.make:99：cmTC_ff17a] 错误 1
+        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-r9Hmid”
+        make: *** [Makefile:127：cmTC_ff17a/fast] 错误 2
         
       exitCode: 2
   -
@@ -697,8 +693,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-5Tp8tz"
-      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-5Tp8tz"
+      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-tsXVjc"
+      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-tsXVjc"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -708,17 +704,17 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-5Tp8tz'
+        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-tsXVjc'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_32f7b/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_32f7b.dir/build.make CMakeFiles/cmTC_32f7b.dir/build
-        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-5Tp8tz”
-        Building C object CMakeFiles/cmTC_32f7b.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_32f7b.dir/CheckFunctionExists.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-5Tp8tz/CheckFunctionExists.c
-        Linking C executable cmTC_32f7b
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32f7b.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_32f7b.dir/CheckFunctionExists.c.o -o cmTC_32f7b  -lpthread 
-        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-5Tp8tz”
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6dec5/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_6dec5.dir/build.make CMakeFiles/cmTC_6dec5.dir/build
+        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-tsXVjc”
+        Building C object CMakeFiles/cmTC_6dec5.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_6dec5.dir/CheckFunctionExists.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-tsXVjc/CheckFunctionExists.c
+        Linking C executable cmTC_6dec5
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6dec5.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_6dec5.dir/CheckFunctionExists.c.o -o cmTC_6dec5  -lpthread 
+        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-tsXVjc”
         
       exitCode: 0
   -
@@ -732,8 +728,8 @@ events:
       - "/usr/local/lib/cmake/Ceres/CeresConfig.cmake:181 (find_dependency)"
       - "CMakeLists.txt:37 (find_package)"
     directories:
-      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-lKOTlB"
-      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-lKOTlB"
+      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-rSTYUe"
+      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-rSTYUe"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -743,17 +739,17 @@ events:
       variable: "BLAS_blas_WORKS"
       cached: true
       stdout: |
-        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-lKOTlB'
+        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-rSTYUe'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9be6a/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_9be6a.dir/build.make CMakeFiles/cmTC_9be6a.dir/build
-        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-lKOTlB”
-        Building C object CMakeFiles/cmTC_9be6a.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_9be6a.dir/CheckFunctionExists.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-lKOTlB/CheckFunctionExists.c
-        Linking C executable cmTC_9be6a
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9be6a.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_9be6a.dir/CheckFunctionExists.c.o -o cmTC_9be6a  /usr/lib/x86_64-linux-gnu/libblas.so 
-        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-lKOTlB”
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3417b/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_3417b.dir/build.make CMakeFiles/cmTC_3417b.dir/build
+        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-rSTYUe”
+        Building C object CMakeFiles/cmTC_3417b.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_3417b.dir/CheckFunctionExists.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-rSTYUe/CheckFunctionExists.c
+        Linking C executable cmTC_3417b
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3417b.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_3417b.dir/CheckFunctionExists.c.o -o cmTC_3417b  /usr/lib/x86_64-linux-gnu/libblas.so 
+        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-rSTYUe”
         
       exitCode: 0
   -
@@ -767,8 +763,8 @@ events:
       - "/usr/local/lib/cmake/Ceres/CeresConfig.cmake:181 (find_dependency)"
       - "CMakeLists.txt:37 (find_package)"
     directories:
-      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-NaGacA"
-      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-NaGacA"
+      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-HyzTpa"
+      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-HyzTpa"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -778,22 +774,22 @@ events:
       variable: "LAPACK_WORKS"
       cached: true
       stdout: |
-        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-NaGacA'
+        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-HyzTpa'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a33c0/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_a33c0.dir/build.make CMakeFiles/cmTC_a33c0.dir/build
-        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-NaGacA”
-        Building C object CMakeFiles/cmTC_a33c0.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_a33c0.dir/CheckFunctionExists.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-NaGacA/CheckFunctionExists.c
-        Linking C executable cmTC_a33c0
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a33c0.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_a33c0.dir/CheckFunctionExists.c.o -o cmTC_a33c0  /usr/lib/x86_64-linux-gnu/libblas.so -lpthread -lm -ldl 
-        /usr/bin/ld: CMakeFiles/cmTC_a33c0.dir/CheckFunctionExists.c.o: in function `main':
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_adf03/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_adf03.dir/build.make CMakeFiles/cmTC_adf03.dir/build
+        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-HyzTpa”
+        Building C object CMakeFiles/cmTC_adf03.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_adf03.dir/CheckFunctionExists.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-HyzTpa/CheckFunctionExists.c
+        Linking C executable cmTC_adf03
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_adf03.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_adf03.dir/CheckFunctionExists.c.o -o cmTC_adf03  /usr/lib/x86_64-linux-gnu/libblas.so -lpthread -lm -ldl 
+        /usr/bin/ld: CMakeFiles/cmTC_adf03.dir/CheckFunctionExists.c.o: in function `main':
         CheckFunctionExists.c:(.text+0x14): undefined reference to `cheev_'
         collect2: error: ld returned 1 exit status
-        make[1]: *** [CMakeFiles/cmTC_a33c0.dir/build.make:100：cmTC_a33c0] 错误 1
-        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-NaGacA”
-        make: *** [Makefile:127：cmTC_a33c0/fast] 错误 2
+        make[1]: *** [CMakeFiles/cmTC_adf03.dir/build.make:100：cmTC_adf03] 错误 1
+        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-HyzTpa”
+        make: *** [Makefile:127：cmTC_adf03/fast] 错误 2
         
       exitCode: 2
   -
@@ -807,8 +803,8 @@ events:
       - "/usr/local/lib/cmake/Ceres/CeresConfig.cmake:181 (find_dependency)"
       - "CMakeLists.txt:37 (find_package)"
     directories:
-      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-cYQHKC"
-      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-cYQHKC"
+      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-Ik9Yzb"
+      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-Ik9Yzb"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -818,17 +814,17 @@ events:
       variable: "LAPACK_lapack_WORKS"
       cached: true
       stdout: |
-        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-cYQHKC'
+        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-Ik9Yzb'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_51061/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_51061.dir/build.make CMakeFiles/cmTC_51061.dir/build
-        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-cYQHKC”
-        Building C object CMakeFiles/cmTC_51061.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_51061.dir/CheckFunctionExists.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-cYQHKC/CheckFunctionExists.c
-        Linking C executable cmTC_51061
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51061.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_51061.dir/CheckFunctionExists.c.o -o cmTC_51061  /usr/lib/x86_64-linux-gnu/liblapack.so /usr/lib/x86_64-linux-gnu/libblas.so 
-        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-cYQHKC”
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3c1aa/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_3c1aa.dir/build.make CMakeFiles/cmTC_3c1aa.dir/build
+        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-Ik9Yzb”
+        Building C object CMakeFiles/cmTC_3c1aa.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_3c1aa.dir/CheckFunctionExists.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-Ik9Yzb/CheckFunctionExists.c
+        Linking C executable cmTC_3c1aa
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c1aa.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_3c1aa.dir/CheckFunctionExists.c.o -o cmTC_3c1aa  /usr/lib/x86_64-linux-gnu/liblapack.so /usr/lib/x86_64-linux-gnu/libblas.so 
+        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-Ik9Yzb”
         
       exitCode: 0
   -
@@ -842,8 +838,8 @@ events:
     checks:
       - "Looking for shm_open in rt"
     directories:
-      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-1UwxQA"
-      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-1UwxQA"
+      source: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-vGi8se"
+      binary: "/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-vGi8se"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -853,17 +849,17 @@ events:
       variable: "HAVE_LIBRT"
       cached: true
       stdout: |
-        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-1UwxQA'
+        Change Dir: '/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-vGi8se'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d0061/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_d0061.dir/build.make CMakeFiles/cmTC_d0061.dir/build
-        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-1UwxQA”
-        Building C object CMakeFiles/cmTC_d0061.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shm_open -o CMakeFiles/cmTC_d0061.dir/CheckFunctionExists.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-1UwxQA/CheckFunctionExists.c
-        Linking C executable cmTC_d0061
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0061.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shm_open CMakeFiles/cmTC_d0061.dir/CheckFunctionExists.c.o -o cmTC_d0061  -lrt 
-        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-1UwxQA”
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_561ea/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_561ea.dir/build.make CMakeFiles/cmTC_561ea.dir/build
+        make[1]: 进入目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-vGi8se”
+        Building C object CMakeFiles/cmTC_561ea.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shm_open -o CMakeFiles/cmTC_561ea.dir/CheckFunctionExists.c.o -c /home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-vGi8se/CheckFunctionExists.c
+        Linking C executable cmTC_561ea
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_561ea.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shm_open CMakeFiles/cmTC_561ea.dir/CheckFunctionExists.c.o -o cmTC_561ea  -lrt 
+        make[1]: 离开目录“/home/vertilang/code/RM_practice/build/CMakeFiles/CMakeScratch/TryCompile-vGi8se”
         
       exitCode: 0
 ...

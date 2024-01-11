@@ -47,61 +47,61 @@ GimbalPose predictor::predictLocation()
     return return_gimbalpose;
 
 }
-GimbalPose predictor::point_to_armor(Eigen::Vector3f point)
-{
-    GimbalPose point;
-    float cosa,sina;
-    float a=-0.5*K_drag*cosa*cosa/kg;
-    
-
-
-
-}
-// GimbalPose predictor::point_to_armor(Eigen::Vector3f point) //将相机转向目标 没有空气阻力  
+// GimbalPose predictor::point_to_armor(Eigen::Vector3f point)
 // {
-//     //yaw
-//     GimbalPose point_to_armor;
-//     float dis;
-//     dis=std::pow(point[0]*point[0]+point[2]*point[2],0.5);
-//     point_to_armor.yaw = std::asin(point[0]/dis)*180/CV_PI;
-//     if (point[2] < 0 && point[0] > 0)
-// 	{
-// 		point_to_armor.yaw=180-point_to_armor.yaw;
-// 	}
-// 	else if (point[2] < 0 && point[0] < 0)
-// 	{
-// 		point_to_armor.yaw=-180+point_to_armor.yaw;
-// 	}
-//     //std::cout<<point_to_armor.yaw<<std::endl;
-//     //pitch   //斜抛运动求角度
-//     float a = -0.5*g*(std::pow(dis,2)/std::pow(v0,2));
-//     float b = dis;
-//     float c = a - point[1];
-//     float Discriminant = (float)(std::pow(b,2) - 4*a*c);  //判别式
-//     //cout<<Discriminant<<endl;
-//     if(Discriminant < 0) 
-//     {
-//         return -1;
-//     }
-//     float tan_angle1 = (-b + std::pow(Discriminant,0.5))/(2*a);
-//     float tan_angle2 = (-b - std::pow(Discriminant,0.5))/(2*a);
-
-//     float angle1 = std::atan(tan_angle1)*180/CV_PI;
-//     float angle2 = std::atan(tan_angle2)*180/CV_PI;
-
-// 	if (tan_angle1 >=-3  && tan_angle1 <=3 ) 
-//     {   
-//         //std::cout << "pitch1     " <<tan_angle1 << std::endl;
-//         point_to_armor.pitch = angle1;
-// 	}
-// 	else
-//     {
-//         //std::cout << "pitch2     " << tan_angle2 << std::endl;
-//         point_to_armor.pitch = angle2;
-// 	}
+//     GimbalPose point;
+//     float cosa,sina;
+//     float a=-0.5*K_drag*cosa*cosa/kg;
     
-//     return point_to_armor;
+
+
+
 // }
+GimbalPose predictor::point_to_armor(Eigen::Vector3f point) //将相机转向目标 没有空气阻力  
+{
+    //yaw
+    GimbalPose point_to_armor;
+    float dis;
+    dis=std::pow(point[0]*point[0]+point[2]*point[2],0.5);
+    point_to_armor.yaw = std::asin(point[0]/dis)*180/CV_PI;
+    if (point[2] < 0 && point[0] > 0)
+	{
+		point_to_armor.yaw=180-point_to_armor.yaw;
+	}
+	else if (point[2] < 0 && point[0] < 0)
+	{
+		point_to_armor.yaw=-180+point_to_armor.yaw;
+	}
+    //std::cout<<point_to_armor.yaw<<std::endl;
+    //pitch   //斜抛运动求角度
+    float a = -0.5*g*(std::pow(dis,2)/std::pow(v0,2));
+    float b = dis;
+    float c = a - point[1];
+    float Discriminant = (float)(std::pow(b,2) - 4*a*c);  //判别式
+    //cout<<Discriminant<<endl;
+    if(Discriminant < 0) 
+    {
+        return -1;
+    }
+    float tan_angle1 = (-b + std::pow(Discriminant,0.5))/(2*a);
+    float tan_angle2 = (-b - std::pow(Discriminant,0.5))/(2*a);
+
+    float angle1 = std::atan(tan_angle1)*180/CV_PI;
+    float angle2 = std::atan(tan_angle2)*180/CV_PI;
+
+	if (tan_angle1 >=-3  && tan_angle1 <=3 ) 
+    {   
+        //std::cout << "pitch1     " <<tan_angle1 << std::endl;
+        point_to_armor.pitch = angle1;
+	}
+	else
+    {
+        //std::cout << "pitch2     " << tan_angle2 << std::endl;
+        point_to_armor.pitch = angle2;
+	}
+    
+    return point_to_armor;
+}
 Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
     {
         pos[0]=pos[0]+x_c2w;
