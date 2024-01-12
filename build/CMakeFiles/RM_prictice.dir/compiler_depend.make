@@ -878,6 +878,10 @@ CMakeFiles/RM_prictice.dir/main.cpp.o: /home/vertilang/code/RM_practice/main.cpp
   /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.h \
   /home/vertilang/code/RM_practice/DaHeng/DxImageProc.h \
   /home/vertilang/code/RM_practice/DaHeng/GxIAPI.h \
+  /home/vertilang/code/RM_practice/Mindvision/CameraApi.h \
+  /home/vertilang/code/RM_practice/Mindvision/CameraDefine.h \
+  /home/vertilang/code/RM_practice/Mindvision/CameraStatus.h \
+  /home/vertilang/code/RM_practice/Mindvision/MidCamera.h \
   /home/vertilang/code/RM_practice/common/preprocess.h \
   /home/vertilang/code/RM_practice/autoaim/TRTModule.hpp \
   /home/vertilang/code/RM_practice/include/Send_Receive.h \
@@ -2892,6 +2896,10 @@ CMakeFiles/RM_prictice.dir/src/thread.cpp.o: /home/vertilang/code/RM_practice/sr
   /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.h \
   /home/vertilang/code/RM_practice/DaHeng/DxImageProc.h \
   /home/vertilang/code/RM_practice/DaHeng/GxIAPI.h \
+  /home/vertilang/code/RM_practice/Mindvision/CameraApi.h \
+  /home/vertilang/code/RM_practice/Mindvision/CameraDefine.h \
+  /home/vertilang/code/RM_practice/Mindvision/CameraStatus.h \
+  /home/vertilang/code/RM_practice/Mindvision/MidCamera.h \
   /home/vertilang/code/RM_practice/common/preprocess.h \
   /home/vertilang/code/RM_practice/autoaim/TRTModule.hpp \
   /home/vertilang/code/RM_practice/include/Send_Receive.h \
@@ -3925,8 +3933,6 @@ CMakeFiles/RM_prictice.dir/src/thread.cpp.o: /home/vertilang/code/RM_practice/sr
 
 /usr/local/include/ceres/autodiff_first_order_function.h:
 
-/usr/local/include/ceres/autodiff_cost_function.h:
-
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/opt_random.h:
@@ -4245,6 +4251,12 @@ CMakeFiles/RM_prictice.dir/src/thread.cpp.o: /home/vertilang/code/RM_practice/sr
 
 /usr/include/eigen3/Eigen/src/Core/SolverBase.h:
 
+/usr/include/eigen3/Eigen/src/Core/Solve.h:
+
+/usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
+
+/usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/local/include/eigen3/Eigen/src/SparseCore/SparseVector.h:
@@ -4258,8 +4270,6 @@ CMakeFiles/RM_prictice.dir/src/thread.cpp.o: /home/vertilang/code/RM_practice/sr
 /usr/include/eigen3/Eigen/src/StlSupport/StdVector.h:
 
 /usr/include/c++/9/typeinfo:
-
-/usr/include/eigen3/Eigen/src/Core/Solve.h:
 
 /usr/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionMapper.h:
 
@@ -4751,6 +4761,10 @@ CMakeFiles/RM_prictice.dir/src/thread.cpp.o: /home/vertilang/code/RM_practice/sr
 
 /usr/local/include/opencv4/opencv2/dnn/layer.hpp:
 
+/usr/local/include/ceres/autodiff_cost_function.h:
+
+/home/vertilang/code/RM_practice/Mindvision/MidCamera.h:
+
 /usr/include/libintl.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
@@ -4933,6 +4947,10 @@ CMakeFiles/RM_prictice.dir/src/thread.cpp.o: /home/vertilang/code/RM_practice/sr
 
 /usr/include/c++/9/type_traits:
 
+/usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
+
+/usr/local/include/opencv4/opencv2/flann/any.h:
+
 /usr/include/c++/9/bits/shared_ptr_base.h:
 
 /usr/include/c++/9/bits/stl_algo.h:
@@ -5059,6 +5077,8 @@ CMakeFiles/RM_prictice.dir/src/thread.cpp.o: /home/vertilang/code/RM_practice/sr
 
 /usr/include/asm-generic/types.h:
 
+/home/vertilang/code/RM_practice/Mindvision/CameraDefine.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/local/include/opencv4/opencv2/core/cvdef.h:
@@ -5152,10 +5172,6 @@ CMakeFiles/RM_prictice.dir/src/thread.cpp.o: /home/vertilang/code/RM_practice/sr
 /usr/local/cuda/include/crt/host_config.h:
 
 /usr/local/include/fmt/core.h:
-
-/usr/local/include/opencv4/opencv2/flann/any.h:
-
-/usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
 
 /usr/include/c++/9/bits/stl_raw_storage_iter.h:
 
@@ -5541,6 +5557,10 @@ CMakeFiles/RM_prictice.dir/src/thread.cpp.o: /home/vertilang/code/RM_practice/sr
 
 /usr/include/eigen3/Eigen/src/Core/NestByValue.h:
 
+/home/vertilang/code/RM_practice/Mindvision/CameraApi.h:
+
+/home/vertilang/code/RM_practice/Mindvision/CameraStatus.h:
+
 /home/vertilang/code/RM_practice/include/Send_Receive.h:
 
 /home/vertilang/code/RM_practice/include/predict.h:
@@ -5616,7 +5636,3 @@ CMakeFiles/RM_prictice.dir/src/thread.cpp.o: /home/vertilang/code/RM_practice/sr
 /usr/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorExecutor.h:
 
 /usr/include/eigen3/Eigen/src/Core/Reverse.h:
-
-/usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
-
-/usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:

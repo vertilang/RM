@@ -832,4 +832,8 @@ CMakeFiles/RM_prictice.dir/src/thread.cpp.o: \
  /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/fcntl2.h
+ /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
+ /home/vertilang/code/RM_practice/src/../include/../Mindvision/MidCamera.h \
+ /home/vertilang/code/RM_practice/src/../include/../Mindvision/CameraApi.h \
+ /home/vertilang/code/RM_practice/src/../include/../Mindvision/CameraDefine.h \
+ /home/vertilang/code/RM_practice/src/../include/../Mindvision/CameraStatus.h

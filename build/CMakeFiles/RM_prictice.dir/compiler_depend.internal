@@ -881,6 +881,10 @@ CMakeFiles/RM_prictice.dir/main.cpp.o
  /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.h
  /home/vertilang/code/RM_practice/DaHeng/DxImageProc.h
  /home/vertilang/code/RM_practice/DaHeng/GxIAPI.h
+ /home/vertilang/code/RM_practice/Mindvision/CameraApi.h
+ /home/vertilang/code/RM_practice/Mindvision/CameraDefine.h
+ /home/vertilang/code/RM_practice/Mindvision/CameraStatus.h
+ /home/vertilang/code/RM_practice/Mindvision/MidCamera.h
  /home/vertilang/code/RM_practice/common/preprocess.h
  /home/vertilang/code/RM_practice/autoaim/TRTModule.hpp
  /home/vertilang/code/RM_practice/include/Send_Receive.h
@@ -2898,6 +2902,10 @@ CMakeFiles/RM_prictice.dir/src/thread.cpp.o
  /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.h
  /home/vertilang/code/RM_practice/DaHeng/DxImageProc.h
  /home/vertilang/code/RM_practice/DaHeng/GxIAPI.h
+ /home/vertilang/code/RM_practice/Mindvision/CameraApi.h
+ /home/vertilang/code/RM_practice/Mindvision/CameraDefine.h
+ /home/vertilang/code/RM_practice/Mindvision/CameraStatus.h
+ /home/vertilang/code/RM_practice/Mindvision/MidCamera.h
  /home/vertilang/code/RM_practice/common/preprocess.h
  /home/vertilang/code/RM_practice/autoaim/TRTModule.hpp
  /home/vertilang/code/RM_practice/include/Send_Receive.h

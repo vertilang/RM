@@ -4,6 +4,7 @@
 #include "../autoaim/TRTModule.hpp"
 #include "predict.h"
 #include "Send_Receive.h"
+#include "../Mindvision/MidCamera.h"
 using namespace Horizon;
 enum BufferSize
 {

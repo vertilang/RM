@@ -23,9 +23,18 @@ void DaHengSetGain(int,void* ){
 }
 
 }
-
+namespace MidCamera
+{
+	int MV_exp_value = 10000;
+	MVCamera *camera_ptr_ = nullptr;
+	void MVSetExpTime(int, void *)
+	{
+		camera_ptr_->SetExpose(MV_exp_value);
+	}
+}
 void Factory::producer()
 {
+    #ifdef DAHENG
     while(true)
     {
         if(GxCamera::camera_ptr_ != nullptr)//打印图片
@@ -70,6 +79,63 @@ void Factory::producer()
             image_buffer_rear_ = 0;
         }    
     }
+    #endif
+    #ifdef MIDVISION
+
+	std::chrono::steady_clock::time_point t0 = std::chrono::steady_clock::now();
+	while (true)
+	{
+		if (MidCamera::camera_ptr_ != nullptr)
+		{
+
+			std::cout << "enter producer" << std::endl;
+			while (image_buffer_front_ - image_buffer_rear_ > IMGAE_BUFFER - 1)
+			{
+			};
+			bool is = image_mutex_.try_lock();
+			std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
+
+			if (MidCamera::camera_ptr_->GetMat(image_buffer_[image_buffer_front_ % IMGAE_BUFFER]))
+			{
+				std::chrono::duration<double> time_run = std::chrono::duration_cast<std::chrono::duration<double>>(t1 - t0);
+				// std::cout << "time :" << time_run.count() << std::endl;
+
+				MidCamera::camera_ptr_->SetExpose(MidCamera::MV_exp_value);
+
+				// if (!is)
+				// {
+				// 	std::cout << "try lock failed!!" << std::endl;
+				// }
+				// std::cout << "enter producer lock" << std::endl;
+				timer_buffer_[image_buffer_front_ % IMGAE_BUFFER] = time_run.count();
+				// cv::imshow("windowName", image_buffer_[image_buffer_front_ % IMGAE_BUFFER]);
+				++image_buffer_front_;
+
+				// std::cout << "out producer lock" << std::endl;
+			}
+			else
+			{
+				delete MidCamera::camera_ptr_;
+				MidCamera::camera_ptr_ = nullptr;
+			}
+			image_mutex_.unlock();
+		}
+		else
+		{
+			MidCamera::camera_ptr_ = new MVCamera;
+
+			MidCamera::camera_ptr_->SetExpose(5000);
+
+			cv::namedWindow("MVCameraDebug", cv::WINDOW_AUTOSIZE);
+			cv::createTrackbar("MVExpTime", "MVCameraDebug", &MidCamera::MV_exp_value, 15000, MidCamera::MVSetExpTime);
+			// MidCamera::MVSetExpTime(0,nullptr);
+
+			image_buffer_front_ = 0;
+			image_buffer_rear_ = 0;
+		}
+	}
+    #endif
+    
 }
 
 
