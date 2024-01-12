@@ -628,6 +628,7 @@ RM_prictice: /usr/local/lib/libopencv_stitching.so.4.5.5
 RM_prictice: /usr/local/lib/libopencv_video.so.4.5.5
 RM_prictice: /usr/local/lib/libopencv_videoio.so.4.5.5
 RM_prictice: /home/vertilang/Galaxy_Linux-x86_Gige-U3_32bits-64bits_1.5.2303.9221/Galaxy_camera/lib/x86_64/libgxiapi.so
+RM_prictice: /home/vertilang/linuxSDK_V2.1.0.37/lib/x64/libMVSDK.so
 RM_prictice: /usr/local/lib/libfmt.a
 RM_prictice: /usr/local/lib/libopencv_imgcodecs.so.4.5.5
 RM_prictice: /usr/local/lib/libopencv_dnn.so.4.5.5

@@ -45,6 +45,7 @@ include_directories(${TensorRT_INCLUDE_DIRS})
 include_directories(${PROJECT_SOURCE_DIR}/autoaim)
 include_directories(${PROJECT_SOURCE_DIR}/DaHeng)
 include_directories(${PROJECT_SOURCE_DIR}/common)
+include_directories(${PROJECT_SOURCE_DIR}/Mindvision)
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 # link the source files
@@ -52,10 +53,19 @@ aux_source_directory(./autoaim SRC_FILES)
 aux_source_directory(./DaHeng SRC_FILES)
 aux_source_directory(./src SRC_FILES)
 
+if(CMAKE_SYSTEM_PROCESSOR MATCHES "x86_64")
+	set(MV_SDK /home/vertilang/linuxSDK_V2.1.0.37/lib/x64/libMVSDK.so)
+elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "aarch64")
+	set(MV_SDK /home/vertilang/linuxSDK_V2.1.0.37/lib/x86/libMVSDK.so)
+else()
+	message(FATAL_ERROR "Unsupport host system architecture: ${CMAKE_HOST_SYSTEM_PROCESSOR}!")
+endif()
+
 cuda_add_executable(${PROJECT_NAME}  ${SRC_FILES} main.cpp )
 
 target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})#new
 target_link_libraries(${PROJECT_NAME} ${SDK_DIR})
+target_link_libraries(${PROJECT_NAME} ${MV_SDK})
 target_link_libraries(${PROJECT_NAME} nvinfer)
 target_link_libraries(${PROJECT_NAME} cudart)
 target_link_libraries(${PROJECT_NAME} fmt::fmt nvonnxparser cuda)
