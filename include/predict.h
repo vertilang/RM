@@ -19,6 +19,7 @@ class DenseBase;
 using namespace std;
 using namespace cv;
 namespace Horizon{
+    static  struct timeval Time_all;
     const static string yaml = "../param/camera_info.yaml";
     static const Mat k;//相机内参
     static const float RealHeight=5.7;

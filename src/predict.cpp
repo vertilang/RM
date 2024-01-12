@@ -4,8 +4,20 @@
 namespace Horizon{
 void predictor::init(std::vector<Armor> &objects)
 {
-
+	gettimeofday(&Time_all, NULL);
     best_target_=ArmorSelect(objects);
+	if(best_target_.center3d_[0]-previous_target_.center3d_[0]>30)
+	{
+		current_predict_mode_ = PREDICTORMODE::ANTIGYRO;
+	}
+	else if(previous_target_.time-Time_all.tv_usec>1000)
+	{
+		current_predict_mode_ = PREDICTORMODE::NONEPREDICT;
+	}
+	else if(best_target_.center3d_[0]-previous_target_.center3d_[0]<10)
+	{
+		current_predict_mode_ = PREDICTORMODE::Directradiation;
+	}
     best_target_.cur_pose_=predictLocation();
     
 }
@@ -45,8 +57,8 @@ GimbalPose predictor::predictLocation()
             break;
         }
         case PREDICTORMODE::NONEPREDICT :{
-            return_gimbalpose.yaw = 0.0;
-            return_gimbalpose.pitch = 0.0;
+            return_gimbalpose.yaw = previous_target_.cur_pose_.yaw;
+            return_gimbalpose.pitch = previous_target_.cur_pose_.pitch;
             best_target_.time=0.0;
             break;
         }
@@ -274,7 +286,6 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
 	{
 		for (int i = 0; i < objects.size(); i++)
 		{
-		
 			objects[i].center3d_ = pnp_solve_->poseCalculation(objects[i]);
 		}
 
