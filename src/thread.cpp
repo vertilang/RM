@@ -1,4 +1,5 @@
 #include "../include/thread.h"
+#define MIDVISION
 namespace GxCamera
 {
 int GX_exp_time = 10000;
@@ -92,7 +93,7 @@ void Factory::producer()
 			while (image_buffer_front_ - image_buffer_rear_ > IMGAE_BUFFER - 1)
 			{
 			};
-			bool is = image_mutex_.try_lock();
+			//bool is = image_buffer_.try_lock();
 			std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
 
 			if (MidCamera::camera_ptr_->GetMat(image_buffer_[image_buffer_front_ % IMGAE_BUFFER]))
@@ -118,7 +119,8 @@ void Factory::producer()
 				delete MidCamera::camera_ptr_;
 				MidCamera::camera_ptr_ = nullptr;
 			}
-			image_mutex_.unlock();
+			//image_mutex_.unlock();
+            
 		}
 		else
 		{
@@ -128,7 +130,7 @@ void Factory::producer()
 
 			cv::namedWindow("MVCameraDebug", cv::WINDOW_AUTOSIZE);
 			cv::createTrackbar("MVExpTime", "MVCameraDebug", &MidCamera::MV_exp_value, 15000, MidCamera::MVSetExpTime);
-			// MidCamera::MVSetExpTime(0,nullptr);
+			MidCamera::MVSetExpTime(0,nullptr);
 
 			image_buffer_front_ = 0;
 			image_buffer_rear_ = 0;
@@ -200,11 +202,10 @@ void Factory::consumer()
 
         sprintf(test, "get pitch:%0.4f ", stm32data.pitch_data_.f);
         cv::putText(img, test, cv::Point(img.cols/2, 200), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
-
-         std::string windowName = "show";
-         cv::namedWindow(windowName, 0);
-         cv::imshow(windowName,img);
-         cv::waitKey(1);
+        std::string windowName = "show";
+        cv::namedWindow(windowName, 0);
+        cv::imshow(windowName,img);
+        cv::waitKey(1);
         
         std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
         std::chrono::duration<double> time_run = std::chrono::duration_cast <std::chrono::duration < double>>(t2 - t1);

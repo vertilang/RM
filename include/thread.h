@@ -26,10 +26,11 @@ public:
     Horizon::DataControler::VisionData visiondata; // 视觉向电控传数据
     Horizon::DataControler::Stm32Data stm32data;   // 电控向视觉发数据
     Horizon::DataControler::Stm32Data last_stm32_;
-
+    cv::Mat image_buffer_[BufferSize::IMGAE_BUFFER];
+    double timer_buffer_[IMGAE_BUFFER];
     Horizon::DataControler::Stm32Data stm32data_temp;
 public:
-    cv::Mat image_buffer_[BufferSize::IMGAE_BUFFER];
+
     volatile unsigned int image_buffer_front_ = 0;   // the produce index
     volatile unsigned int image_buffer_rear_ = 0;    // the comsum index 
     std::vector<Armor> objects;
