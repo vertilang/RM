@@ -31,9 +31,8 @@ public:
     cv::Mat image_buffer_[BufferSize::IMGAE_BUFFER];
     volatile unsigned int image_buffer_front_ = 0;   // the produce index
     volatile unsigned int image_buffer_rear_ = 0;    // the comsum index 
-
+    std::vector<Armor> objects;
     void producer();
-
     void consumer();
     void getdata();
 

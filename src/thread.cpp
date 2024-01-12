@@ -87,29 +87,31 @@ void Factory::consumer()
         // 直接获取引用
         cv::Mat &img = image_buffer_[image_buffer_rear_%IMGAE_BUFFER];
         predict.v0=20.0;
+        int i=0;
         auto detectors = trtmodel(img);
         for(auto detector : detectors)
         {
+
             predict.best_target_.cur_pose_.yaw=stm32data.yaw_data_.f;
             predict.best_target_.cur_pose_.pitch=stm32data.pitch_data_.f;
             predict.best_target_.cur_pose_.timestamp=stm32data.time.f;
-            predict.best_target_.pts[0].x=detector.rect.x;
-            predict.best_target_.pts[0].y=detector.rect.y;
-            predict.best_target_.pts[1].x=detector.rect.x+detector.rect.width;
-            predict.best_target_.pts[1].y=detector.rect.y;
-            predict.best_target_.pts[2].x=detector.rect.x;
-            predict.best_target_.pts[2].y=detector.rect.y+detector.rect.height;
-            predict.best_target_.pts[3].x=detector.rect.x+detector.rect.width;
-            predict.best_target_.pts[3].y=detector.rect.y+detector.rect.height;
-            predict.init();
-            visiondata.yaw_data_.f=predict.best_target_.cur_pose_.yaw;
-            visiondata.pitch_data_.f=predict.best_target_.cur_pose_.pitch;
+            objects[i].pts[0].x=detector.rect.x;
+            objects[i].pts[0].y=detector.rect.y;
+            objects[i].pts[1].x=detector.rect.x+detector.rect.width;
+            objects[i].pts[1].y=detector.rect.y;
+            objects[i].pts[2].x=detector.rect.x;
+            objects[i].pts[2].y=detector.rect.y+detector.rect.height;
+            objects[i].pts[3].x=detector.rect.x+detector.rect.width;
+            objects[i].pts[3].y=detector.rect.y+detector.rect.height;
             visiondata.is_have_armor=1;
         }
         if(!detectors.size())
         {
             visiondata.is_have_armor=0;
         }
+        predict.init(objects);
+        visiondata.yaw_data_.f=predict.best_target_.cur_pose_.yaw;
+        visiondata.pitch_data_.f=predict.best_target_.cur_pose_.pitch;
         data_controler_.sentData(fd,visiondata);
         char test[100];
         sprintf(test, "tz:%0.4f", predict.best_target_.center3d_[2]);

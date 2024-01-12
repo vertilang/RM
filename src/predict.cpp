@@ -2,11 +2,10 @@
 #define g 9.80665
 #define w 1.5
 namespace Horizon{
-void predictor::init()
+void predictor::init(std::vector<Armor> &objects)
 {
-    
-    best_target_.center3d_=pnp_solve_->poseCalculation(best_target_);
 
+    best_target_=ArmorSelect(objects);
     best_target_.cur_pose_=predictLocation();
     
 }
@@ -28,7 +27,11 @@ GimbalPose predictor::predictLocation()
             break;
         }
         case PREDICTORMODE::FOLLOW:
-        {   
+        {
+			break;
+        }
+        case PREDICTORMODE::ANTIGYRO:
+        {
 			if(velocities_.size()<velocities_deque_size_)
 			{
 				velocities_.push_back(best_target_);
@@ -39,11 +42,6 @@ GimbalPose predictor::predictLocation()
 				velocities_.push_back(best_target_);
 			}
 			best_target_.velocitie=CeresVelocity(velocities_);
-            break;
-        }
-        case PREDICTORMODE::ANTIGYRO:
-        {
-
             break;
         }
         case PREDICTORMODE::NONEPREDICT :{
@@ -181,8 +179,9 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
 		    std::cout << "[pixe] size " << point_in_pixe.size() << std::endl;
 	    }
 
-	    cv::Mat rotM = cv::Mat::zeros(3, 3, CV_64FC1); // 解算出来的旋转矩阵
-
+	    // cv::Mat rotM = cv::Mat::zeros(3, 3, CV_64FC1); // 解算出来的旋转矩阵
+		// Eigen::Matrix3d rotM_eigen;
+		// cv::cv2eigen(rotM, rotM_eigen);
 	    // 将旋转矩阵分解为三个轴的欧拉角（roll、pitch、yaw）
 	    //Eigen::Vector3d euler_angles = get_euler_angle(rvecs);
         //obj.cur_pose_<<euler_angles[0],euler_angles[1],euler_angles[2];
@@ -270,6 +269,37 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
 
 	return {vx, vy, vz};
 
+	}
+	Armor predictor::ArmorSelect(std::vector<Armor> &objects)
+	{
+		for (int i = 0; i < objects.size(); i++)
+		{
+		
+			objects[i].center3d_ = pnp_solve_->poseCalculation(objects[i]);
+		}
+
+		float distances[objects.size()];
+		for (int i = 0; i < objects.size(); i++)
+		{
+			distances[i] = std::sqrt(std::pow(objects[i].center3d_[0], 2) + std::pow(objects[i].center3d_[1], 2) + std::pow(objects[i].center3d_[2], 2));
+		}
+
+		float last_pose = std::sqrt(std::pow(previous_target_.center3d_[0], 2) + std::pow(previous_target_.center3d_[1], 2) + std::pow(previous_target_.center3d_[2], 2));
+
+		float distances_residual[objects.size()];
+
+		for (int i = 1; i < objects.size(); i++)
+		{
+			distances_residual[i] = std::abs(distances[i] - last_pose);
+		}
+
+		int index = 0;
+		for (int i = 1; i < objects.size(); i++)
+		{
+			if (distances_residual[i] < distances_residual[index])
+				index = i;
+		}
+		return objects[index];
 	}
 
 }

@@ -12,6 +12,7 @@
 #include <ceres/ceres.h>
 #include <eigen3/Eigen/Core>
 #include <eigen3/Eigen/Dense>
+#include <opencv2/core/eigen.hpp>
 #include <eigen3/Eigen/Eigen>
 #include <eigen3/Eigen/src/Core/DenseBase.h>
 class DenseBase;
@@ -171,7 +172,7 @@ enum class PREDICTORMODE{
 	    cv::Mat K_;								// 内参
 	    cv::Mat distCoeffs_;					// 畸变系数
     public:
-	    cv::Mat rotate_world_cam_;				// 从世界系到相机系的旋转矩阵
+	    GimbalPose rotate_world_cam_;				// 从世界系到相机系的旋转矩阵
         bool is_large_;
 
     };
@@ -282,21 +283,20 @@ enum class PREDICTORMODE{
         GimbalPose point_to_armor(Eigen::Vector3f point);
         std::deque<Armor> velocities_;// 速度的循环队列，方便做拟合，装甲板切换初始化
         Eigen::Vector3f CeresVelocity(std::deque<Armor> target);
-        
+        Armor ArmorSelect(std::vector<Armor> &objects);
+        std::pair<Eigen::Vector3d, Eigen::Vector3d> last_pose_;
     public:
         std::shared_ptr<PnpSolver> pnp_solve_ = std::make_shared<PnpSolver>(yaml); 
         float v0;
         GimbalPose previous_gimbalpose_;        //上一次位姿
         GimbalPose current_gimbalpose_;         //当前位姿
-        GimbalPose shot;
         //单张图片最多装甲板数量
-        Armor target1;
-        Armor target2;
-        void init();
+        void init(std::vector<Armor> &objects);
         Armor best_target_;                     //装甲板
         Armor previous_target_;                 //上一帧目标坐标
         bool is_have_data_;
         float delta_t_;                         //时间
+    
     };
 
     /*
