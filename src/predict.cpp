@@ -6,6 +6,7 @@ void predictor::init()
 {
     
     best_target_.center3d_=pnp_solve_->poseCalculation(best_target_);
+
     best_target_.cur_pose_=predictLocation();
     
 }
@@ -28,35 +29,33 @@ GimbalPose predictor::predictLocation()
         }
         case PREDICTORMODE::FOLLOW:
         {   
-            //return_gimbalpose = followTarget();
+			if(velocities_.size()<velocities_deque_size_)
+			{
+				velocities_.push_back(best_target_);
+			}
+			else
+			{
+				velocities_.pop_front();
+				velocities_.push_back(best_target_);
+			}
+			best_target_.velocitie=CeresVelocity(velocities_);
             break;
         }
         case PREDICTORMODE::ANTIGYRO:
         {
 
-            //return_gimbalpose = antiGyroTarget();
             break;
         }
         case PREDICTORMODE::NONEPREDICT :{
             return_gimbalpose.yaw = 0.0;
             return_gimbalpose.pitch = 0.0;
-            best_target_.h_time_stamp_=0.0;
+            best_target_.time=0.0;
             break;
         }
     }
     return return_gimbalpose;
 
 }
-// GimbalPose predictor::point_to_armor(Eigen::Vector3f point)
-// {
-//     GimbalPose point;
-//     float cosa,sina;
-//     float a=-0.5*K_drag*cosa*cosa/kg;
-    
-
-
-
-// }
 GimbalPose predictor::point_to_armor(Eigen::Vector3f point) //将相机转向目标 没有空气阻力  
 {
     //yaw
@@ -196,5 +195,81 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
 	    return coord;
     }
 
+	Eigen::Vector3f predictor::CeresVelocity(std::deque<Armor> target) // 最小二乘法拟合速度
+	{
+		int N = target.size();
+	if (N < 4)
+	{
+		return ;
+	}
+
+	double avg_x = 0;
+	double avg_x2 = 0;
+	double avg_f = 0;
+	double avg_xf = 0;
+
+	double time_first = target.front().time;
+
+	for (int i = 0; i < N; i++)
+	{
+		avg_x +=target [i].time- time_first;
+		avg_x2 += std::pow(target[i].time - time_first, 2);
+		avg_f += target[i].center3d_[0];
+		avg_xf += (target[i].time - time_first) * target[i].center3d_[0];
+	}
+
+	double vx = (avg_xf - N * (avg_x / N) * (avg_f / N)) / (avg_x2 - N * std::pow(avg_x / N, 2));
+
+	
+	avg_f = 0;
+	avg_xf = 0;
+	for (int i = 0; i < N; i++)
+	{
+		avg_f += target[i].center3d_[1];
+		avg_xf += (target[i].time - time_first) * target[i].center3d_[1];
+	}
+	double vy = (avg_xf - N * (avg_x / N) * (avg_f / N)) / (avg_x2 - N * std::pow(avg_x / N, 2));
+
+	double avg_f_ = 0;
+	double avg_xf_ = 0;
+	for (int i = 0; i < N; i++)
+	{
+
+		avg_f_ += target[i].center3d_[2];
+		avg_xf_ += (target[i].time - time_first) * target[i].center3d_[2];
+	}
+	double vz = (avg_xf_ - N * (avg_x / N) * (avg_f_ / N)) / (avg_x2 - N * std::pow(avg_x / N, 2));
+
+	// Vector3d ave_v_;
+	// ave_v_[0] = vx;
+	// ave_v_[1] = vy;
+	// ave_v_[2] = vz;
+
+	// if (ave_v.size() != 0)
+	// {
+	// double sum_vx, sum_vy, sum_vz;
+	// for (int u = 0; u < ave_v.size(); u++)
+	// {
+	// 	sum_vx += ave_v[u][0];
+	// 	sum_vy += ave_v[u][1];
+	// 	sum_vz += ave_v[u][2];
+	// }
+	// double aver_vx = sum_vx / ave_v.size();
+	// double aver_vy = sum_vy / ave_v.size();
+	// double aver_vz = sum_vz / ave_v.size();
+
+	if (vx * previous_target_.velocitie[0] < 0)
+	{
+		vx = previous_target_.velocitie[0];
+		//v_count++;
+	}
+	else
+	{
+		//v_count = 0;
+	}
+
+	return {vx, vy, vz};
+
+	}
 
 }

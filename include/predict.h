@@ -25,8 +25,7 @@ namespace Horizon{
     static const float z_c2w=-0.108;
     static const float x_c2w=0;
     static const float y_c2w=-0.0715;
-    static const float K_drag=0.5;
-    static const float kg=1;
+    static const float velocities_deque_size_ = 15;
 
 enum class  CameraMoode
     {
@@ -150,10 +149,11 @@ enum class PREDICTORMODE{
     {
     public:
         Eigen::Vector3f   center3d_;//三维中心点
-        float     distance_;//装甲板距离
-        GimbalPose  cur_pose_;//云台坐标ee
-        long h_time_stamp_;//时间戳
+        GimbalPose  cur_pose_;//云台坐标
+        Eigen::Vector3f velocitie;
+        long time;//时间戳
         cv::Point2f pts[4];//四个点
+
     };
     enum THRESHOLD{
         LOST_TARGET = 10,
@@ -280,7 +280,8 @@ enum class PREDICTORMODE{
         PREDICTORMODE current_predict_mode_;    // 这一帧预测状态
         GimbalPose predictLocation();           // 预测位置，返回相机要转到装甲板的角度
         GimbalPose point_to_armor(Eigen::Vector3f point);
-        
+        std::deque<Armor> velocities_;// 速度的循环队列，方便做拟合，装甲板切换初始化
+        Eigen::Vector3f CeresVelocity(std::deque<Armor> target);
         
     public:
         std::shared_ptr<PnpSolver> pnp_solve_ = std::make_shared<PnpSolver>(yaml); 
