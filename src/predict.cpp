@@ -211,7 +211,7 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
 		int N = target.size();
 	if (N < 4)
 	{
-		return ;
+		return previous_target_.velocitie;
 	}
 
 	double avg_x = 0;
