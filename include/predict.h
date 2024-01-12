@@ -292,12 +292,12 @@ enum class PREDICTORMODE{
         GimbalPose previous_gimbalpose_;        //上一次位姿
         GimbalPose current_gimbalpose_;         //当前位姿
         //单张图片最多装甲板数量
-        void init(std::vector<Armor> &objects);
+        void init();
         Armor best_target_;                     //装甲板
         Armor previous_target_;                 //上一帧目标坐标
         bool is_have_data_;
         float delta_t_;                         //时间
-    
+        std::vector<Armor> objects;
     };
 
     /*

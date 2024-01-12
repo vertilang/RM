@@ -2,10 +2,12 @@
 #define g 9.80665
 #define w 1.5
 namespace Horizon{
-void predictor::init(std::vector<Armor> &objects)
+void predictor::init()
 {
 	gettimeofday(&Time_all, NULL);
+	
     best_target_=ArmorSelect(objects);
+
 	if(best_target_.center3d_[0]-previous_target_.center3d_[0]>30)
 	{
 		current_predict_mode_ = PREDICTORMODE::ANTIGYRO;
@@ -14,7 +16,7 @@ void predictor::init(std::vector<Armor> &objects)
 	{
 		current_predict_mode_ = PREDICTORMODE::NONEPREDICT;
 	}
-	else if(best_target_.center3d_[0]-previous_target_.center3d_[0]<10)
+	else
 	{
 		current_predict_mode_ = PREDICTORMODE::Directradiation;
 	}
@@ -29,7 +31,7 @@ void predictor::init(std::vector<Armor> &objects)
 GimbalPose predictor::predictLocation()
 {
     GimbalPose return_gimbalpose;
-    current_predict_mode_ = PREDICTORMODE::Directradiation;
+
 
     switch(current_predict_mode_)
     {
@@ -284,11 +286,13 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
 	}
 	Armor predictor::ArmorSelect(std::vector<Armor> &objects)
 	{
+		
 		for (int i = 0; i < objects.size(); i++)
 		{
+			cout<<"dss"<<endl;
 			objects[i].center3d_ = pnp_solve_->poseCalculation(objects[i]);
 		}
-
+		cout<<"dss"<<endl;
 		float distances[objects.size()];
 		for (int i = 0; i < objects.size(); i++)
 		{

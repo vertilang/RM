@@ -64,7 +64,7 @@ set(cmake_dependency_file "/home/vertilang/code/RM_practice/build/CMakeFiles/RM_
 set(CUDA_make2cmake "/usr/local/share/cmake-3.27/Modules/FindCUDA/make2cmake.cmake") # path
 set(CUDA_parse_cubin "/usr/local/share/cmake-3.27/Modules/FindCUDA/parse_cubin.cmake") # path
 set(build_cubin OFF) # bool
-set(CUDA_HOST_COMPILER "/usr/bin/cc") # path
+set(CUDA_HOST_COMPILER "/usr/bin/gcc") # path
 # We won't actually use these variables for now, but we need to set this, in
 # order to force this file to be run again if it changes.
 set(generated_file_path "/home/vertilang/code/RM_practice/build/CMakeFiles/RM_prictice.dir/./autoaim/.") # path

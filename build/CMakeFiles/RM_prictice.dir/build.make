@@ -517,85 +517,85 @@ CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o: CMakeFiles/RM_prictice.dir/f
 CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o: /home/vertilang/code/RM_practice/autoaim/TRTModule.cpp
 CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o: CMakeFiles/RM_prictice.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o -MF CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o.d -o CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o -c /home/vertilang/code/RM_practice/autoaim/TRTModule.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o -MF CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o.d -o CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o -c /home/vertilang/code/RM_practice/autoaim/TRTModule.cpp
 
 CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/autoaim/TRTModule.cpp > CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/autoaim/TRTModule.cpp > CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.i
 
 CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/autoaim/TRTModule.cpp -o CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/autoaim/TRTModule.cpp -o CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.s
 
 CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o: CMakeFiles/RM_prictice.dir/flags.make
 CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o: /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.cpp
 CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o: CMakeFiles/RM_prictice.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o -MF CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o.d -o CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o -c /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o -MF CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o.d -o CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o -c /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.cpp
 
 CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.cpp > CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.cpp > CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.i
 
 CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.cpp -o CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.cpp -o CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.s
 
 CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o: CMakeFiles/RM_prictice.dir/flags.make
 CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o: /home/vertilang/code/RM_practice/src/Send_Receive.cpp
 CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o: CMakeFiles/RM_prictice.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o -MF CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o.d -o CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o -c /home/vertilang/code/RM_practice/src/Send_Receive.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o -MF CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o.d -o CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o -c /home/vertilang/code/RM_practice/src/Send_Receive.cpp
 
 CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/src/Send_Receive.cpp > CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/src/Send_Receive.cpp > CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.i
 
 CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/src/Send_Receive.cpp -o CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/src/Send_Receive.cpp -o CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.s
 
 CMakeFiles/RM_prictice.dir/src/predict.cpp.o: CMakeFiles/RM_prictice.dir/flags.make
 CMakeFiles/RM_prictice.dir/src/predict.cpp.o: /home/vertilang/code/RM_practice/src/predict.cpp
 CMakeFiles/RM_prictice.dir/src/predict.cpp.o: CMakeFiles/RM_prictice.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RM_prictice.dir/src/predict.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/src/predict.cpp.o -MF CMakeFiles/RM_prictice.dir/src/predict.cpp.o.d -o CMakeFiles/RM_prictice.dir/src/predict.cpp.o -c /home/vertilang/code/RM_practice/src/predict.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/src/predict.cpp.o -MF CMakeFiles/RM_prictice.dir/src/predict.cpp.o.d -o CMakeFiles/RM_prictice.dir/src/predict.cpp.o -c /home/vertilang/code/RM_practice/src/predict.cpp
 
 CMakeFiles/RM_prictice.dir/src/predict.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RM_prictice.dir/src/predict.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/src/predict.cpp > CMakeFiles/RM_prictice.dir/src/predict.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/src/predict.cpp > CMakeFiles/RM_prictice.dir/src/predict.cpp.i
 
 CMakeFiles/RM_prictice.dir/src/predict.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RM_prictice.dir/src/predict.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/src/predict.cpp -o CMakeFiles/RM_prictice.dir/src/predict.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/src/predict.cpp -o CMakeFiles/RM_prictice.dir/src/predict.cpp.s
 
 CMakeFiles/RM_prictice.dir/src/thread.cpp.o: CMakeFiles/RM_prictice.dir/flags.make
 CMakeFiles/RM_prictice.dir/src/thread.cpp.o: /home/vertilang/code/RM_practice/src/thread.cpp
 CMakeFiles/RM_prictice.dir/src/thread.cpp.o: CMakeFiles/RM_prictice.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RM_prictice.dir/src/thread.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/src/thread.cpp.o -MF CMakeFiles/RM_prictice.dir/src/thread.cpp.o.d -o CMakeFiles/RM_prictice.dir/src/thread.cpp.o -c /home/vertilang/code/RM_practice/src/thread.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/src/thread.cpp.o -MF CMakeFiles/RM_prictice.dir/src/thread.cpp.o.d -o CMakeFiles/RM_prictice.dir/src/thread.cpp.o -c /home/vertilang/code/RM_practice/src/thread.cpp
 
 CMakeFiles/RM_prictice.dir/src/thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RM_prictice.dir/src/thread.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/src/thread.cpp > CMakeFiles/RM_prictice.dir/src/thread.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/src/thread.cpp > CMakeFiles/RM_prictice.dir/src/thread.cpp.i
 
 CMakeFiles/RM_prictice.dir/src/thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RM_prictice.dir/src/thread.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/src/thread.cpp -o CMakeFiles/RM_prictice.dir/src/thread.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/src/thread.cpp -o CMakeFiles/RM_prictice.dir/src/thread.cpp.s
 
 CMakeFiles/RM_prictice.dir/main.cpp.o: CMakeFiles/RM_prictice.dir/flags.make
 CMakeFiles/RM_prictice.dir/main.cpp.o: /home/vertilang/code/RM_practice/main.cpp
 CMakeFiles/RM_prictice.dir/main.cpp.o: CMakeFiles/RM_prictice.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vertilang/code/RM_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RM_prictice.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/main.cpp.o -MF CMakeFiles/RM_prictice.dir/main.cpp.o.d -o CMakeFiles/RM_prictice.dir/main.cpp.o -c /home/vertilang/code/RM_practice/main.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RM_prictice.dir/main.cpp.o -MF CMakeFiles/RM_prictice.dir/main.cpp.o.d -o CMakeFiles/RM_prictice.dir/main.cpp.o -c /home/vertilang/code/RM_practice/main.cpp
 
 CMakeFiles/RM_prictice.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RM_prictice.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/main.cpp > CMakeFiles/RM_prictice.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vertilang/code/RM_practice/main.cpp > CMakeFiles/RM_prictice.dir/main.cpp.i
 
 CMakeFiles/RM_prictice.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RM_prictice.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/main.cpp -o CMakeFiles/RM_prictice.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vertilang/code/RM_practice/main.cpp -o CMakeFiles/RM_prictice.dir/main.cpp.s
 
 # Object files for target RM_prictice
 RM_prictice_OBJECTS = \

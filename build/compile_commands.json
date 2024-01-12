@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/vertilang/code/RM_practice/build",
+  "command": "/usr/bin/g++ -DAPI_EXPORTS -I/usr/local/cuda/include -I/home/vertilang/TensorRT-8.5.3.1/include -I/usr/local/include/ceres -I/usr/include/eigen3 -I/home/vertilang/code/RM_practice/autoaim -I/home/vertilang/code/RM_practice/DaHeng -I/home/vertilang/code/RM_practice/common -I/home/vertilang/code/RM_practice/Mindvision -I/home/vertilang/code/RM_practice/include -isystem /usr/local/include/opencv4  -std=c++11 -O3 -pthread -Wall -Ofast -g -Wfatal-errors -D_MWAITXINTRIN_H_INCLUDED -O3 -DNDEBUG -std=gnu++17   -std=c++17 -o CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o -c /home/vertilang/code/RM_practice/autoaim/TRTModule.cpp",
+  "file": "/home/vertilang/code/RM_practice/autoaim/TRTModule.cpp",
+  "output": "CMakeFiles/RM_prictice.dir/autoaim/TRTModule.cpp.o"
+},
+{
+  "directory": "/home/vertilang/code/RM_practice/build",
+  "command": "/usr/bin/g++ -DAPI_EXPORTS -I/usr/local/cuda/include -I/home/vertilang/TensorRT-8.5.3.1/include -I/usr/local/include/ceres -I/usr/include/eigen3 -I/home/vertilang/code/RM_practice/autoaim -I/home/vertilang/code/RM_practice/DaHeng -I/home/vertilang/code/RM_practice/common -I/home/vertilang/code/RM_practice/Mindvision -I/home/vertilang/code/RM_practice/include -isystem /usr/local/include/opencv4  -std=c++11 -O3 -pthread -Wall -Ofast -g -Wfatal-errors -D_MWAITXINTRIN_H_INCLUDED -O3 -DNDEBUG -std=gnu++17   -std=c++17 -o CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o -c /home/vertilang/code/RM_practice/DaHeng/DaHengCamera.cpp",
+  "file": "/home/vertilang/code/RM_practice/DaHeng/DaHengCamera.cpp",
+  "output": "CMakeFiles/RM_prictice.dir/DaHeng/DaHengCamera.cpp.o"
+},
+{
+  "directory": "/home/vertilang/code/RM_practice/build",
+  "command": "/usr/bin/g++ -DAPI_EXPORTS -I/usr/local/cuda/include -I/home/vertilang/TensorRT-8.5.3.1/include -I/usr/local/include/ceres -I/usr/include/eigen3 -I/home/vertilang/code/RM_practice/autoaim -I/home/vertilang/code/RM_practice/DaHeng -I/home/vertilang/code/RM_practice/common -I/home/vertilang/code/RM_practice/Mindvision -I/home/vertilang/code/RM_practice/include -isystem /usr/local/include/opencv4  -std=c++11 -O3 -pthread -Wall -Ofast -g -Wfatal-errors -D_MWAITXINTRIN_H_INCLUDED -O3 -DNDEBUG -std=gnu++17   -std=c++17 -o CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o -c /home/vertilang/code/RM_practice/src/Send_Receive.cpp",
+  "file": "/home/vertilang/code/RM_practice/src/Send_Receive.cpp",
+  "output": "CMakeFiles/RM_prictice.dir/src/Send_Receive.cpp.o"
+},
+{
+  "directory": "/home/vertilang/code/RM_practice/build",
+  "command": "/usr/bin/g++ -DAPI_EXPORTS -I/usr/local/cuda/include -I/home/vertilang/TensorRT-8.5.3.1/include -I/usr/local/include/ceres -I/usr/include/eigen3 -I/home/vertilang/code/RM_practice/autoaim -I/home/vertilang/code/RM_practice/DaHeng -I/home/vertilang/code/RM_practice/common -I/home/vertilang/code/RM_practice/Mindvision -I/home/vertilang/code/RM_practice/include -isystem /usr/local/include/opencv4  -std=c++11 -O3 -pthread -Wall -Ofast -g -Wfatal-errors -D_MWAITXINTRIN_H_INCLUDED -O3 -DNDEBUG -std=gnu++17   -std=c++17 -o CMakeFiles/RM_prictice.dir/src/predict.cpp.o -c /home/vertilang/code/RM_practice/src/predict.cpp",
+  "file": "/home/vertilang/code/RM_practice/src/predict.cpp",
+  "output": "CMakeFiles/RM_prictice.dir/src/predict.cpp.o"
+},
+{
+  "directory": "/home/vertilang/code/RM_practice/build",
+  "command": "/usr/bin/g++ -DAPI_EXPORTS -I/usr/local/cuda/include -I/home/vertilang/TensorRT-8.5.3.1/include -I/usr/local/include/ceres -I/usr/include/eigen3 -I/home/vertilang/code/RM_practice/autoaim -I/home/vertilang/code/RM_practice/DaHeng -I/home/vertilang/code/RM_practice/common -I/home/vertilang/code/RM_practice/Mindvision -I/home/vertilang/code/RM_practice/include -isystem /usr/local/include/opencv4  -std=c++11 -O3 -pthread -Wall -Ofast -g -Wfatal-errors -D_MWAITXINTRIN_H_INCLUDED -O3 -DNDEBUG -std=gnu++17   -std=c++17 -o CMakeFiles/RM_prictice.dir/src/thread.cpp.o -c /home/vertilang/code/RM_practice/src/thread.cpp",
+  "file": "/home/vertilang/code/RM_practice/src/thread.cpp",
+  "output": "CMakeFiles/RM_prictice.dir/src/thread.cpp.o"
+},
+{
+  "directory": "/home/vertilang/code/RM_practice/build",
+  "command": "/usr/bin/g++ -DAPI_EXPORTS -I/usr/local/cuda/include -I/home/vertilang/TensorRT-8.5.3.1/include -I/usr/local/include/ceres -I/usr/include/eigen3 -I/home/vertilang/code/RM_practice/autoaim -I/home/vertilang/code/RM_practice/DaHeng -I/home/vertilang/code/RM_practice/common -I/home/vertilang/code/RM_practice/Mindvision -I/home/vertilang/code/RM_practice/include -isystem /usr/local/include/opencv4  -std=c++11 -O3 -pthread -Wall -Ofast -g -Wfatal-errors -D_MWAITXINTRIN_H_INCLUDED -O3 -DNDEBUG -std=gnu++17   -std=c++17 -o CMakeFiles/RM_prictice.dir/main.cpp.o -c /home/vertilang/code/RM_practice/main.cpp",
+  "file": "/home/vertilang/code/RM_practice/main.cpp",
+  "output": "CMakeFiles/RM_prictice.dir/main.cpp.o"
+}
+]

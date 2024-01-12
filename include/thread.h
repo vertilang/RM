@@ -17,7 +17,7 @@ public:
     Factory(){}
 public:
     cv::Mat img;
-    Horizon::predictor predict;
+    std::shared_ptr<predictor> predict = std::make_shared<predictor>();
     Horizon::GimbalPose get_gim; 
 
     Horizon::DataControler data_controler_;
@@ -33,7 +33,7 @@ public:
 
     volatile unsigned int image_buffer_front_ = 0;   // the produce index
     volatile unsigned int image_buffer_rear_ = 0;    // the comsum index 
-    std::vector<Armor> objects;
+    
     void producer();
     void consumer();
     void getdata();
