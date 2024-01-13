@@ -4,10 +4,10 @@
 namespace Horizon{
 void predictor::init()
 {
-	gettimeofday(&Time_all, NULL);
 	
+	gettimeofday(&Time_all, NULL);	
     best_target_=ArmorSelect(objects);
-
+	current_predict_mode_ = PREDICTORMODE::Directradiation;
 	if(best_target_.center3d_[0]-previous_target_.center3d_[0]>30)
 	{
 		current_predict_mode_ = PREDICTORMODE::ANTIGYRO;
@@ -21,6 +21,7 @@ void predictor::init()
 		current_predict_mode_ = PREDICTORMODE::Directradiation;
 	}
     best_target_.cur_pose_=predictLocation();
+	objects.clear();
     
 }
     /*

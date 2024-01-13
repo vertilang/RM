@@ -164,7 +164,6 @@ void Factory::consumer()
         predict->best_target_.time=Time_all.tv_usec/1000;
         for(auto detector : detectors)
         {
-
             target.pts[0].x=detector.rect.x;
             target.pts[0].y=detector.rect.y;
             target.pts[1].x=detector.rect.x+detector.rect.width;
@@ -175,7 +174,6 @@ void Factory::consumer()
             target.pts[3].y=detector.rect.y+detector.rect.height;
             predict->objects.push_back(target);
             visiondata.is_have_armor=1;
-        
         }
         if(!detectors.size())
         {
