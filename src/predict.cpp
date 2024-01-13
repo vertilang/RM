@@ -58,6 +58,7 @@ GimbalPose predictor::predictLocation()
 				velocities_.push_back(best_target_);
 			}
 			best_target_.velocitie=CeresVelocity(velocities_);
+			return_gimbalpose=antigyro_Armor(best_target_);
             break;
         }
         case PREDICTORMODE::NONEPREDICT :{
