@@ -155,7 +155,7 @@ void Factory::consumer()
         image_buffer_rear_ = image_buffer_front_ - 1;
         // 直接获取引用
         cv::Mat &img = image_buffer_[image_buffer_rear_%IMGAE_BUFFER];
-        predict->v0=20.0;
+        predict->v0=30.0;
         int i=0;
         auto detectors = trtmodel(img);
         predict->best_target_.cur_pose_.yaw=0;//stm32data.yaw_data_.f;
@@ -205,8 +205,6 @@ void Factory::consumer()
 
         sprintf(test, "get pitch:%0.4f ", stm32data.pitch_data_.f);
         cv::putText(img, test, cv::Point(img.cols/2, 200), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
-        sprintf(test, "mode%0.4f ", predict->current_predict_mode_);
-        cv::putText(img, test, cv::Point(img.cols*5/6, 40), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
         std::string windowName = "show";
         
         cv::namedWindow(windowName, 0);
@@ -218,7 +216,7 @@ void Factory::consumer()
 
         float FPS = 1/(time_run.count());
 
-        std::cout << "                 " << "FPS: " << FPS << std::endl;
+        //std::cout << "                 " << "FPS: " << FPS << std::endl;
 
     }
 }

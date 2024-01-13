@@ -22,6 +22,7 @@ void predictor::init()
 	}
     best_target_.cur_pose_=predictLocation();
 	objects.clear();
+	previous_target_=best_target_;
     
 }
     /*
@@ -140,7 +141,7 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
         -std::sin(gm.yaw),  0.0,  std::cos(gm.yaw);
         Eigen::Vector3f t_pos_;
         t_pos_ = yaw_rotation_matrix_ * pitch_rotation_matrix_ * pos;
-        //cout<<"w"<<t_pos_[0]<<"   "<<t_pos_[1]<<"   "<<t_pos_[2]<<"   "<<endl;
+        cout<<"w"<<t_pos_[0]<<"   "<<t_pos_[1]<<"   "<<t_pos_[2]<<"   "<<endl;
         return t_pos_;
     }
     PnpSolver::PnpSolver(const string yaml)
@@ -208,7 +209,6 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
         //cout<<obj.cur_pose_.pitch<<"   "<<obj.cur_pose_.yaw<<endl;
 	    return coord;
     }
-
 	Eigen::Vector3f predictor::CeresVelocity(std::deque<Armor> target) // 最小二乘法拟合速度
 	{
 		int N = target.size();
