@@ -139,7 +139,7 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
         -std::sin(gm.yaw),  0.0,  std::cos(gm.yaw);
         Eigen::Vector3f t_pos_;
         t_pos_ = yaw_rotation_matrix_ * pitch_rotation_matrix_ * pos;
-        cout<<"w"<<t_pos_[0]<<"   "<<t_pos_[1]<<"   "<<t_pos_[2]<<"   "<<endl;
+        //cout<<"w"<<t_pos_[0]<<"   "<<t_pos_[1]<<"   "<<t_pos_[2]<<"   "<<endl;
         return t_pos_;
     }
     PnpSolver::PnpSolver(const string yaml)
@@ -202,7 +202,7 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
 
 	    Eigen::Vector3f coord;
 	    coord << tvecs.ptr<double>(0)[0] / 100, -tvecs.ptr<double>(0)[1] / 100, tvecs.ptr<double>(0)[2] / 100;
-        cout<<"c"<<coord[0]<<"   "<<coord[1]<<"   "<<coord[2]<<endl;
+        //cout<<"c"<<coord[0]<<"   "<<coord[1]<<"   "<<coord[2]<<endl;
         coord=cam3ptz(obj.cur_pose_,coord);
         //cout<<obj.cur_pose_.pitch<<"   "<<obj.cur_pose_.yaw<<endl;
 	    return coord;
@@ -296,7 +296,7 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
 			
 			objects[i].center3d_ = pnp_solve_->poseCalculation(objects[i]);
 		}
-		cout<<"dss"<<endl;
+		
 		float distances[objects.size()];
 		for (int i = 0; i < objects.size(); i++)
 		{

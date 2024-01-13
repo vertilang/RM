@@ -27,7 +27,7 @@ void DaHengSetGain(int,void* ){
 }
 namespace MidCamera
 {
-	int MV_exp_value = 10000;
+	int MV_exp_value = 6000;
 	MVCamera *camera_ptr_ = nullptr;
 	void MVSetExpTime(int, void *)
 	{
@@ -164,15 +164,18 @@ void Factory::consumer()
         predict->best_target_.time=Time_all.tv_usec/1000;
         for(auto detector : detectors)
         {
-            predict->objects[i].pts[0].x=detector.rect.x;
-            predict->objects[i].pts[0].y=detector.rect.y;
-            predict->objects[i].pts[1].x=detector.rect.x+detector.rect.width;
-            predict->objects[i].pts[1].y=detector.rect.y;
-            predict->objects[i].pts[2].x=detector.rect.x;
-            predict->objects[i].pts[2].y=detector.rect.y+detector.rect.height;
-            predict->objects[i].pts[3].x=detector.rect.x+detector.rect.width;
-            predict->objects[i].pts[3].y=detector.rect.y+detector.rect.height;
+
+            target.pts[0].x=detector.rect.x;
+            target.pts[0].y=detector.rect.y;
+            target.pts[1].x=detector.rect.x+detector.rect.width;
+            target.pts[1].y=detector.rect.y;
+            target.pts[2].x=detector.rect.x;
+            target.pts[2].y=detector.rect.y+detector.rect.height;
+            target.pts[3].x=detector.rect.x+detector.rect.width;
+            target.pts[3].y=detector.rect.y+detector.rect.height;
+            predict->objects.push_back(target);
             visiondata.is_have_armor=1;
+        
         }
         if(!detectors.size())
         {
@@ -215,7 +218,7 @@ void Factory::consumer()
 
         float FPS = 1/(time_run.count());
 
-        //std::cout << "                 " << "FPS: " << FPS << std::endl;
+        std::cout << "                 " << "FPS: " << FPS << std::endl;
 
     }
 }

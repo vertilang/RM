@@ -19,7 +19,7 @@ public:
     cv::Mat img;
     std::shared_ptr<predictor> predict = std::make_shared<predictor>();
     Horizon::GimbalPose get_gim; 
-
+    Armor target;
     Horizon::DataControler data_controler_;
     int fd;
     mutex serial_mutex_;
