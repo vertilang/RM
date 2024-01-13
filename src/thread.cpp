@@ -207,6 +207,8 @@ void Factory::consumer()
 
         sprintf(test, "get pitch:%0.4f ", stm32data.pitch_data_.f);
         cv::putText(img, test, cv::Point(img.cols/2, 200), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
+        sprintf(test, "mode%0.4f ", predict->current_predict_mode_);
+        cv::putText(img, test, cv::Point(img.cols*5/6, 40), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 1, 8);
         std::string windowName = "show";
         
         cv::namedWindow(windowName, 0);

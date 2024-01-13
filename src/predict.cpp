@@ -320,5 +320,17 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
 		}
 		return objects[index];
 	}
+	GimbalPose predictor::antigyro_Armor(Armor target)
+	{
+		gettimeofday(&Time_all, NULL);
+		float T_fly=(target.time-Time_all.tv_usec)/1000+
+		pow((target.center3d_[0]*target.center3d_[0]+target.center3d_[2]*target.center3d_[2]),0.5)
+		/(target.cur_pose_.pitch/180)*CV_PI;
+		target.center3d_[0]=target.velocitie[0]*T_fly;
+		target.center3d_[1]=target.velocitie[1]*T_fly;
+		target.center3d_[2]=target.velocitie[2]*T_fly;
+
+		return  point_to_armor(target.center3d_);
+	}
 
 }

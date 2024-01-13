@@ -279,13 +279,14 @@ enum class PREDICTORMODE{
     
     private:
         DECTORSTATE  current_dector_state_;     // 这一帧识别的状态
-        PREDICTORMODE current_predict_mode_;    // 这一帧预测状态
+        //PREDICTORMODE current_predict_mode_;    // 这一帧预测状态
         GimbalPose predictLocation();           // 预测位置，返回相机要转到装甲板的角度
         GimbalPose point_to_armor(Eigen::Vector3f point);
+
+        GimbalPose antigyro_Armor(Armor target);
         std::deque<Armor> velocities_;// 速度的循环队列，方便做拟合，装甲板切换初始化
         Eigen::Vector3f CeresVelocity(std::deque<Armor> target);
         Armor ArmorSelect(std::vector<Armor> &objects);
-        std::pair<Eigen::Vector3d, Eigen::Vector3d> last_pose_;
     public:
         std::shared_ptr<PnpSolver> pnp_solve_ = std::make_shared<PnpSolver>(yaml); 
         float v0;
@@ -298,6 +299,7 @@ enum class PREDICTORMODE{
         bool is_have_data_;
         float delta_t_;                         //时间
         std::vector<Armor> objects;
+        PREDICTORMODE current_predict_mode_;    // 这一帧预测状态
     };
 
     /*
