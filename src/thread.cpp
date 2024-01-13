@@ -1,5 +1,6 @@
 #include "../include/thread.h"
 #define MIDVISION
+//#define DAHENG
 namespace GxCamera
 {
 int GX_exp_time = 10000;
@@ -89,7 +90,7 @@ void Factory::producer()
 		if (MidCamera::camera_ptr_ != nullptr)
 		{
 
-			std::cout << "enter producer" << std::endl;
+			//std::cout << "enter producer" << std::endl;
 			while (image_buffer_front_ - image_buffer_rear_ > IMGAE_BUFFER - 1)
 			{
 			};

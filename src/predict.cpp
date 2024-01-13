@@ -286,10 +286,14 @@ Eigen::Vector3f cam3ptz(GimbalPose gm,Eigen::Vector3f &pos)
 	}
 	Armor predictor::ArmorSelect(std::vector<Armor> &objects)
 	{
+		if(!objects.size())
+		{
+			return previous_target_;
+		}
 		
 		for (int i = 0; i < objects.size(); i++)
 		{
-			cout<<"dss"<<endl;
+			
 			objects[i].center3d_ = pnp_solve_->poseCalculation(objects[i]);
 		}
 		cout<<"dss"<<endl;
