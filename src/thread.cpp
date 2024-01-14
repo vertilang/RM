@@ -158,8 +158,8 @@ void Factory::consumer()
         predict->v0=30.0;
         int i=0;
         auto detectors = trtmodel(img);
-        predict->best_target_.cur_pose_.yaw=0;//stm32data.yaw_data_.f;
-        predict->best_target_.cur_pose_.pitch=0;//stm32data.pitch_data_.f;
+        predict->best_target_.cur_pose_.yaw=stm32data.yaw_data_.f;
+        predict->best_target_.cur_pose_.pitch=stm32data.pitch_data_.f;
         gettimeofday(&Time_all, NULL);
         predict->best_target_.time=Time_all.tv_usec/1000;
         for(auto detector : detectors)
