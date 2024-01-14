@@ -175,7 +175,8 @@ void Factory::consumer()
             predict->objects.push_back(target);
             visiondata.is_have_armor=1;
         }
-        if(!detectors.size())
+        gettimeofday(&Time_all, NULL);
+        if(predict->previous_target_.time-Time_all.tv_usec>3000)
         {
             visiondata.is_have_armor=0;
         }

@@ -12,10 +12,6 @@ void predictor::init()
 	{
 		current_predict_mode_ = PREDICTORMODE::ANTIGYRO;
 	}
-	else if(previous_target_.time-Time_all.tv_usec>1000)
-	{
-		current_predict_mode_ = PREDICTORMODE::NONEPREDICT;
-	}
 	else
 	{
 		current_predict_mode_ = PREDICTORMODE::Directradiation;

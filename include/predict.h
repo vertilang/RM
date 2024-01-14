@@ -32,6 +32,7 @@ namespace Horizon{
     static const float z_c2w=0.065;
     static const float x_c2w=0;
     static const float y_c2w=0.09;
+    
     static const float velocities_deque_size_ = 15;
 
 enum class  CameraMoode
