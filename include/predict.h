@@ -24,9 +24,14 @@ namespace Horizon{
     static const Mat k;//相机内参
     static const float RealHeight=5.7;
     static const float RealWidth=13.5;
-    static const float z_c2w=-0.108;
+    //哨兵
+    // static const float z_c2w=0.108;
+    // static const float x_c2w=0;
+    // static const float y_c2w=0.0715;
+    //英雄
+    static const float z_c2w=0.065;
     static const float x_c2w=0;
-    static const float y_c2w=-0.0715;
+    static const float y_c2w=0.09;
     static const float velocities_deque_size_ = 15;
 
 enum class  CameraMoode
