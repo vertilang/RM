@@ -182,6 +182,13 @@ void Factory::consumer()
         predict->init();
         visiondata.yaw_data_.f=predict->best_target_.cur_pose_.yaw;
         visiondata.pitch_data_.f=predict->best_target_.cur_pose_.pitch;
+        if(predict->current_predict_mode_==PREDICTORMODE::ANTIGYRO)
+        {
+            if(stm32data.yaw_data_.f==predict->best_target_.cur_pose_.yaw)
+            {
+                visiondata.is_fire=1;
+            }
+        }
         data_controler_.sentData(fd,visiondata);
         
         char test[100];
