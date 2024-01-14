@@ -190,6 +190,7 @@ void Factory::consumer()
             }
         }
         data_controler_.sentData(fd,visiondata);
+        visiondata.is_fire=0;
         
         char test[100];
         sprintf(test, "tz:%0.4f", predict->best_target_.center3d_[2]);
