@@ -23,13 +23,13 @@ void predictor::init()
 }
 void Load_para(const string yaml)
 {
-	cv::FileStorage fs(yaml, cv::FileStorage::READ);
-	fs["x_c2w"] >> x_c2w;
-	fs["y_c2w"] >> y_c2w;
-	fs["z_c2w"] >> z_c2w;
-	fs["w_Armor"]>> RealWidth;
-	fs["h_Armor"]>> RealHeight;
-	fs.release();
+		cv::FileStorage fs(yaml, cv::FileStorage::READ);
+	    x_c2w=fs["x_c2w"];
+	    y_c2w=fs["y_c2w"];
+		z_c2w=fs["z_c2w"];
+		RealWidth=fs["w_Armor"];
+		RealHeight=fs["h_Armor"];
+	    fs.release();
 }
     /*
     @brief  预测敌方控制方式并跟踪
