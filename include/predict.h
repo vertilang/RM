@@ -20,21 +20,16 @@ using namespace std;
 using namespace cv;
 namespace Horizon{
     static  struct timeval Time_all;
-    const static string yaml = "../param/camera_info.yaml";
-    static const Mat k;//相机内参
-    static const float RealHeight=5.7;
-    static const float RealWidth=13.5;
-    //哨兵
-    // static const float z_c2w=0.108;
-    // static const float x_c2w=0;
-    // static const float y_c2w=0.0715;
-    //英雄
-    static const float z_c2w=0.065;
-    static const float x_c2w=0;
-    static const float y_c2w=0.09;
+    const static string camera_yaml = "../param/camera_info.yaml";
+    const static string parameter_yaml ="../param/parameter.yaml";
+    static float RealHeight;
+    static float RealWidth;
+    static float z_c2w;
+    static float x_c2w;
+    static float y_c2w;
     
     static const float velocities_deque_size_ = 15;
-
+void Load_para(const string);
 enum class  CameraMoode
     {
         MonnocularCamera,//单目相机
@@ -294,7 +289,7 @@ enum class PREDICTORMODE{
         Eigen::Vector3f CeresVelocity(std::deque<Armor> target);
         Armor ArmorSelect(std::vector<Armor> &objects);
     public:
-        std::shared_ptr<PnpSolver> pnp_solve_ = std::make_shared<PnpSolver>(yaml); 
+        std::shared_ptr<PnpSolver> pnp_solve_ = std::make_shared<PnpSolver>(camera_yaml); 
         float v0;
         GimbalPose previous_gimbalpose_;        //上一次位姿
         GimbalPose current_gimbalpose_;         //当前位姿

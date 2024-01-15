@@ -4,7 +4,7 @@
 namespace Horizon{
 void predictor::init()
 {
-	
+	Load_para(parameter_yaml);
 	gettimeofday(&Time_all, NULL);	
     best_target_=ArmorSelect(objects);
 	current_predict_mode_ = PREDICTORMODE::Directradiation;
@@ -20,6 +20,16 @@ void predictor::init()
 	objects.clear();
 	previous_target_=best_target_;
     
+}
+void Load_para(const string yaml)
+{
+	cv::FileStorage fs(yaml, cv::FileStorage::READ);
+	fs["x_c2w"] >> x_c2w;
+	fs["y_c2w"] >> y_c2w;
+	fs["z_c2w"] >> z_c2w;
+	fs["w_Armor"]>> RealWidth;
+	fs["h_Armor"]>> RealHeight;
+	fs.release();
 }
     /*
     @brief  预测敌方控制方式并跟踪
